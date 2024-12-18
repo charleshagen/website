@@ -25,7 +25,7 @@ title:                 NightPhotons
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Night Photons · Astrophotography Gallery · Pixinsight Processing Guides and Tutorials · Equipment and Gear Recommendations
+  Night Photons · Astrophotography Gallery · Pixinsight Processing Guides and Tutorials · Equipment
 
 # A shorter description for the sidebar.
 tagline:               --- Charles Hagen ---
@@ -48,12 +48,12 @@ author:
 
 # Add links to the sidebar.
 menu:
-  # - title:             Blog
-  #   url:               /blog/
-  - title:             Projects
-    url:               /projects/
   - title:             Gallery
     url:               /gallery/
+  - title:             Blog
+    url:               /blog/
+  # - title:             Projects
+  #   url:               /projects/
   # - title:             Résumé*
   #   url:               /resume/
   - title:             Tutorials
@@ -62,6 +62,9 @@ menu:
   #   url:               /docs/
   - title:             Software
     url:               /software/
+  - title:             About
+    url:               /about/
+  
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -105,7 +108,7 @@ accent_color:          rgb(14, 120, 227)
 # This is used for the `theme-color` meta tag,
 # which changes the background color of the browser UI in certain browsers.
 # Defaults to `accent_color`.
-theme_color:           rgb(27, 49, 82)
+theme_color:           rgb(22, 22, 22)
 
 # IMPORTANT:
 # As of Hydejack 9.2, Google Fonts are turned off by default due to a stronger focus on privacy.
@@ -164,6 +167,11 @@ defaults:
   # but we want them to be `WebPage`s:
   - scope:
       type:            projects
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            software
     values:
       seo:
         type:          WebPage
@@ -310,6 +318,9 @@ collections:
     permalink:         /gallery/:path/
     output:            true
 
+  software:
+    permalink:         /software/:path/
+    output:            true
 
 # File inclusion/exclusion
 # ----------------------------------------------------------------------------------------
