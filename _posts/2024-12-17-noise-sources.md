@@ -11,9 +11,6 @@ hide_last_modified: true
 {:toc}
 
 ## Explanation of SNR
-
-###
-
 Signal is defined as the mean photon flux from the target. 
 Noise is simply the deviation from the true average flux that our detectors observe. This can be found statistically.
 
@@ -42,7 +39,7 @@ We will focus on temporal noise only as calibration frames and dithering can lar
 - **Dark noise** 
     - Also a form of shot noise, same random distribution of discrete particles, but from primarily thermally dependent sources.
     - It’s important to note that dark current is not the same thing as dark noise. Just as with photon shot noise, it’s the square root of the dark current.
-    
+
 * * *
 
 

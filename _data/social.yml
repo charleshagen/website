@@ -1,7 +1,7 @@
 # This file contains meta data for various social media sites
 email:
   name: Email
-  icon: icon-mail
+  icon: icon-envelop
   prepend: 'mailto:'
 amazon:
   name: Amazon
@@ -261,3 +261,6 @@ discord:
 mastodon:
   name: Mastodon
   icon: icon-mastodon
+astrobin:
+  name: Astrobin
+  icon: icon-astrobin
