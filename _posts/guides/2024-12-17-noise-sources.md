@@ -1,11 +1,14 @@
 ---
 layout: post
+categories: guides
 title: Noise Sources 1
 description: >
     An introduction to noise sources on CMOS cameras.
 sitemap: false
 hide_last_modified: true
+excerpt_separator: <!--more-->
 ---
+<!--more-->
 
 - this unordered seed list will be replaced by toc as unordered list
 {:toc}

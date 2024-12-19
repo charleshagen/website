@@ -17,6 +17,8 @@
 layout: base
 ---
 
+{{ content }}
+
 {% assign plugins = site.plugins | default:site.gems %}
 
 {% if plugins contains 'jekyll-paginate' %}

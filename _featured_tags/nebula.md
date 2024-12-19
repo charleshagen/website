@@ -1,7 +1,7 @@
 ---
 layout: grid
 type: tag
-title: Nebulae
-slug: nebulae
+title: Nebula
+slug: nebula
 sitemap: false
 ---

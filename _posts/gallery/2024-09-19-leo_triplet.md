@@ -1,7 +1,7 @@
 ---
 layout:      post
 category:    gallery
-tags:        nebulae
+tags:        galaxy
 title:       The Leo Triplet
 date:        19 Sep 2024
 caption:     The Leo Triplet \| HaRGB \| 150 hours
@@ -22,7 +22,9 @@ accent_image:
   background: -webkit-linear-gradient(top,rgb(22,22,22) 0%, rgb(32,32,32) 100%); // link
   background: linear-gradient(to bottom,rgb(22,22,22) 0%, rgb(32,32,32) 100%); // inline
 # theme_color: '#192a47'
+excerpt_separator: <!--more-->
 ---
+<!--more-->
 
 TODO
 

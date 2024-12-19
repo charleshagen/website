@@ -1,7 +1,7 @@
 ---
 layout: grid
 type: category
-title: Gallery
-slug: gallery
+title: Guides
+slug: guides
 no_groups: true
 ---
