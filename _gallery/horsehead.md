@@ -1,19 +1,19 @@
 ---
 layout:      project
 title:       The Horsehead
-date:        11 Nov 2022
-caption:     Messier 31 - The Andromeda Galaxy \| HaLRGB \| 9 hours
+date:        13 Nov 2023
+caption:     The Horsehead Nebula \| HaRGB \| 14 hours
 description: >
-  Messier 31 - The Andromeda Galaxy, imaged in HaLRGB under bortle 1 skies over the course of only two nights. 
+  TODO
 image: 
-  path: https://nightphotons.s3.amazonaws.com/assets/img/gallery/M31.jpg
+  path: https://nightphotons.s3.amazonaws.com/assets/img/gallery/Horsehead.jpg
   srcset: 
-    3000w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/M31.jpg
-    1500w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/M31_x0,5.jpg
-    750w:  https://nightphotons.s3.amazonaws.com/assets/img/gallery/M31_x0,25.jpg
+    3000w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/Horsehead.jpg
+    1500w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/Horsehead_x0,5.jpg
+    750w:  https://nightphotons.s3.amazonaws.com/assets/img/gallery/Horsehead_x0,25.jpg
 links:
   - title:   Full Resolution
-    url:     https://app.astrobin.com/i/g8x4fr?r=B
+    url:     https://app.astrobin.com/i/8wf274
 featured:    false
 accent_image:
   background: -moz-linear-gradient(top, rgb(22,22,22) 0%, rgb(32,32,32) 100%); // link
@@ -22,14 +22,13 @@ accent_image:
 # theme_color: '#192a47'
 ---
 
-Andromeda has been a target I have wanted to shoot for a while but I wanted to wait to do it justice. This was a very fun image to process and of course, with the Hydrogen clouds being so faint and with such little integration time, it was a very nice challenge to get the image to the state that it is currently in. I will be posting a tutorial to my website, nightphotons.com, on my process for integrating H-alpha signal into LRGB images.
+TODO
 
-### Acquisition
-
-| Filter                | Exposures | Integration |
-|-----------------------|-----------|-------------|
-| Luminance  | 37×180″   | 1h 51′      |
-| Red        | 11×180″   | 33′         |
-| Green      | 11×180″   | 33′         |
-| Blue       | 11×180″   | 33′         |
-| H-alpha    | 34×600″   | 5h 40′      |
+| Filter     | Exposures    | Integration |
+|------------|--------------|-------------|
+| Luminance  | 111×180″     | 5h 33′
+| Red        | 50×120″      | 1h 40′
+| Green      | 42×120″      | 1h 24′
+| Blue       | 30×120″      | 1h
+| H-alpha    | 56×300″      | 4h 40′
+| Total      |              | 14h 17'

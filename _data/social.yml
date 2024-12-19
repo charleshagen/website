@@ -1,7 +1,7 @@
 # This file contains meta data for various social media sites
 email:
   name: Email
-  icon: icon-envelop
+  icon: icon-mail1
   prepend: 'mailto:'
 amazon:
   name: Amazon
@@ -66,7 +66,7 @@ rss:
 youtube:
   name: YouTube
   icon: icon-youtube
-  prepend: "https://www.youtube.com/channel/"
+  prepend: "https://www.youtube.com/@"
 twitch:
   name: Twitch
   icon: icon-twitch
