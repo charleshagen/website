@@ -1,5 +1,7 @@
 ---
-layout:      project
+layout:      post
+category:    gallery
+tags:        nebulae
 title:       The Horsehead
 date:        13 Nov 2023
 caption:     The Horsehead Nebula \| HaRGB \| 14 hours
@@ -19,6 +21,7 @@ accent_image:
   background: -moz-linear-gradient(top, rgb(22,22,22) 0%, rgb(32,32,32) 100%); // link
   background: -webkit-linear-gradient(top,rgb(22,22,22) 0%, rgb(32,32,32) 100%); // link
   background: linear-gradient(to bottom,rgb(22,22,22) 0%, rgb(32,32,32) 100%); // inline
+permalink: /gallery/horsehead
 # theme_color: '#192a47'
 ---
 

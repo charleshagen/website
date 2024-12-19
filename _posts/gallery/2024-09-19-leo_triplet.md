@@ -1,5 +1,7 @@
 ---
-layout:      project
+layout:      post
+category:    gallery
+tags:        nebulae
 title:       The Leo Triplet
 date:        19 Sep 2024
 caption:     The Leo Triplet \| HaRGB \| 150 hours

@@ -1,8 +1,10 @@
 ---
-layout: page
-title: Thank You!
+layout: welcome
+title: NightPhotons
 sitemap: false
 ---
+
+<!--posts-->
 
 Thank you for buying the PRO version of Hydejack! 🎉
 
