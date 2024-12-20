@@ -35,17 +35,32 @@ If you think of a signal with some noise source, sometimes the noise will constr
  There are dozens of noise sources, most of which we do not need to care about. There are a couple composite noise sources which are useful abstractions of the underlying noise sources that encompass all of the significant noise sources present in our images. These sources are shot noise, dark noise, and read noise.
 
 We will focus on temporal noise only as calibration frames and dithering can largely mitigate spatial noise.
-- **Shot noise**
-    - Sky background
-    - Target photons
-- **Read noise**
-    - Noise from quantization error, random telegraph signal noise, amplifier noise, and some thermal effects (resistor noise).
-- **Dark noise** 
+- **Shot noise --- $$\small{(\sqrt{S_T}, \sqrt{S_B})}$$** \\
+    Shot noise stems from the fact that light is composed of photons which are emitted at a fixed rate, but are fully independent from one another. **The stochastic nature of photon detection means that values will follow a Poisson Distribution**. In Poisson distributions, the standard deviation (which equals the RMS noise) is equal to $$\sqrt{\lambda}$$, where $$\lambda$$ is the mean value. This has two primary consequences:
+
+    1. Contrary to what one might expect, brighter objects produce *more* noise. (This is just balanced by the fact that you proportionally also get much greater signal, and thus higher SNR)
+    
+    2. Fixed rate 'signal', like light pollution, can generate a significant amount of noise. While contrast can be recovered in processing by simply subtracting off the mean light pollution value, the noise remains. This is why imaging in light pollution produces noisier images than in dark skies. 
+
+- **Read noise --- $$\small{(R)}$$** \\
+    Noise from quantization error, random telegraph signal noise, amplifier noise, and some thermal effects (resistor noise).
+- **Dark noise --- $$\small{(\sqrt{D_C})}$$**
     - Also a form of shot noise, same random distribution of discrete particles, but from primarily thermally dependent sources.
     - It’s important to note that dark current is not the same thing as dark noise. Just as with photon shot noise, it’s the square root of the dark current.
 
 * * *
 
+$$
+\begin{align*}
+    \text{SNR}_{\text{int}} &= \frac{\sum_{i=1}^n s_i t}{\sqrt{ \sum_{i=1}^n(\sqrt{R^2 + D_{C,i}t + S_{T,i}t + S_{B,i}t})^2}}\\[2em]
+                            &= \frac{n\bar{s} t}{\sqrt{ n(R^2 + \bar{D}_Ct + \bar{S}_Tt + \bar{S}_Bt)}}\\[2em]
+                            &= \frac{I\bar{s}}{\sqrt{ (\frac{IR^2}{t} + I\bar{D}_C + I\bar{S}_T + I\bar{S}_B)}}\\[2em]
+                            &= \frac{\sqrt{I} \times \bar{s}}{\sqrt{ (\frac{R^2}{t} + \bar{D}_C + \bar{S}_T + \bar{S}_B)}}\\[2em]
+\end{align*}
+$$
+
+Derivation from the definition of noise to demonstrate Read noise's relationship with exposure time for an integration. Note, $$(n \times t = I)$$
+{:.figcaption}
 
 ### Putting it all together (The CCD Equation)
 CCD equations with signal, sky background noise, target noise, read noise, dark noise.
