@@ -47,7 +47,7 @@ import { setupFLIP } from './flip';
 
   const NAVBAR_SEL = '#_navbar > .content > .nav-btn-bar';
 
-  const CROSS_FADE_DURATION = 2000;
+  const CROSS_FADE_DURATION = 700;
 
   const FADE_OUT = [{ opacity: 1 }, { opacity: 0 }];
   const FADE_IN = [

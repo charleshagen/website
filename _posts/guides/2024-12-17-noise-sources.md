@@ -2,6 +2,7 @@
 layout: post
 categories: guides
 title: Noise Sources 1
+caption: Understanding the basics of noise in imaging.
 description: >
     An introduction to noise sources on CMOS cameras.
 sitemap: false
