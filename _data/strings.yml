@@ -76,7 +76,7 @@ colon:                 ':'
 separator:             '|'
 category_start:        'to '
 category_spearator:    ' / '
-tag_start:             ' |  Tags: '
+tag_start:             ' |  <span class="icon-price-tag" style="margin-right: 0.5em;"></span>Tags: '
 tag_separator:         ', '
 from_to_separator:     '–'
 breadcrumbs_home:      'home'
@@ -85,7 +85,7 @@ breadcrumbs_separator: '/'
 # Date formats
 # ---------------------------------------------------------------------------------------
 date_formats:
-  post:                '%b %d, %Y'
+  post:                '<span class="icon-calendar" style="margin-right: 0.5em;"></span>%b %d, %Y'
   last_modified_at:    '%Y-%m-%d'
   related_post:        '%d %b %Y'
   list_group_by:       '%Y'
