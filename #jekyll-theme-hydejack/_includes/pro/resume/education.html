@@ -1,7 +1,7 @@
 {% if resume.education.size > 0 %}
 <section>
   <div class="npb">
-  <h2 id="education" class="h3 hr-bottom">
+  <h2 id="education" class="h3 hr-bottom"  style="color: #2a97f7;">
     {{ strings.resume.education | default:"Education" }}
     <span class="symbol {{ icons.education | default:'icon-library' }}"></span>
   </h2>
@@ -27,6 +27,8 @@
         }}
       </h3>
     </header>
+
+    {% include components/message.html class="note" text=edu.summary alt="" %}
 
     {% if edu.courses.size > 0 %}
     <h4 class="sr-only">{{ strings.resume.courses | default:"Courses" }}</h4>

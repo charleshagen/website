@@ -4,100 +4,128 @@
 basics:
   name: "Charles Hagen"
   label: "Software Engineer"
-  picture: "https://via.placeholder.com/240x240"
-  email: ""
+  picture: "https://nightphotons.s3.amazonaws.com/assets/website/pfp_256x256.jpg"
+  email: "charlesjhagen@gmail.com"
   phone: "(720)-477-8849"
   website: "https://nightphotons.com"
   summary: >
-    Richard hails from Tulsa.
-    He has earned degrees from the University of Oklahoma and Stanford. (Go Sooners and Cardinals!)
-    Before starting Pied Piper, he worked for Hooli as a part time software developer.
-    While his work focuses on applied information theory,
-    mostly optimizing lossless compression schema of both the length-limited and adaptive variants,
-    his non-work interests range widely,
-    everything from quantum computing to chaos theory.
-    He could tell you about it, but THAT would NOT be a “length-limited” conversation!
-    Open `_data/resume.yml` to edit this text.
-  location:
-    address: "2712 Broadway St"
-    postalCode: "CA 94115"
-    city: "San Francisco"
-    countryCode: "US"
-    region: "California"
+    TODO
+  # location:
+  #   address: "2712 Broadway St"
+  #   postalCode: "CA 94115"
+  #   city: "San Francisco"
+  #   countryCode: "US"
+  #   region: "California"
   profiles:
-    - network: "Twitter"
-      username: "RHendricksCEO"
-      url: ""
+    # - network: "Twitter"
+    #   username: "RHendricksCEO"
+    #   url: ""
     - network: "LinkedIn"
-      username: "Richard Hendricks"
-      url: ""
+      username: "Charles Hagen"
+      url: "https://www.linkedin.com/in/charles-hagen-615474218/"
+    - network: "Github"
+      username: "charleshagen"
+      url: "https://github.com/charleshagen/"
 work:
-  - company: "Pied Piper"
-    position: "CEO/President"
-    website: "https://piedpiper.com"
-    startDate: "2013-12-01"
-    endDate: ""
+  - company: "Altius Space Machines"
+    position: "Software Engineer"
+    website: "https://voyagerspace.com/innovate/in-space-servicing-assembly/"
+    startDate: "2023-5-23"
+    endDate: "2023-10-12"
     summary: >
-      Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has
-      consistently fielded high Weisman Scores™ that are not merely competitive,
-      but approach the theoretical limit of lossless compression.
+      Altius Space Machines developed Electro-Permanent Magnet based hardware for Satellite docking and UAV systems to support a sustainable space by providing cost-effective and reliable satellite servicing and end-of-life services.
     highlights:
-      - "Built an algorithm for artist to detect if their music was violating copy right infringement laws"
-      - "Successfully won Techcrunch Disrupt"
-      - "Optimized an algorithm that holds the current world record for Weisman Scores"
+      - Develop and manufacture single and dual mode Electro-Permanent Magnet (EPM) technology for satellite docking and UAV deployment
+      - Develop novel algorithm for submillimeter-precision proximity and ranging detection with EPMs, leveraging scripted interface and advanced data analysis techniques
+      - Maintain and update embedded firmware for EPMs, enabling critical features in C
+      - Design & implement front end graphical interface (GUI) for EPMs to enable customers to plug-and-play development kits in C#
+      - Design testing procedures for residual magnetism, holding force, and telemetry metrics using custom API
 volunteer:
-  - organization: "CoderDojo"
-    position: "Teacher"
-    website: "https://coderdojo.com/"
-    startDate: "2012-01-01"
-    endDate: "2013-01-01"
-    summary: "Global movement of free coding clubs for young people."
+  - organization: "Denver Astronimical Society"
+    position: "ASIG Co-lead"
+    website: "https://www.denverastro.org/"
+    startDate: "2020-11-01"
+    endDate: ""
+    summary: "The Denver Astronomical Society promotes the enjoyment and understanding of astronomical history, lore and phenomena by providing educational and observation opportunities for it's members, educcating the general public and conducting outreach activities."
     highlights:
-      - "Awarded 'Teacher of the Month'"
+      - Hosts beginner and advanced astro-imaging special interest group (ASIG) meetings twice a month, teaching interested astronomers a range of topics including image processing techniques and the science of equipment.
+      - Provides orientation for new members to access dark sky site.
+      - Restores and mantains dark sky site, assists with other club activities.
+  - organization: "CSM Astronomy Club"
+    position: "President"
+    startDate: "2022-09-01"
+    endDate: "2024-09-01"
+    summary: "The Colorado School of Mines Astronomy club is a student-run organization dedicated to outreach and introducing curious minds to the topic of astronomy and astrophysics. The Astronomy Club hosts public meetings, observing nights, and trips to see astronomical events first-hand."
+    highlights:
+      - Plan, budget, organize, and execute meetings, trips, and purchases for the club
+      - Educational outreach events, public observing nights, and information about astronomical events
+
 education:
-  - institution: "University of Oklahoma"
-    area: "Information Technology"
+  - institution: "Colorado School of Mines"
+    area: "Computer Science"
     studyType: "Bachelor"
-    startDate: "2011-06-01"
-    endDate: "2014-01-01"
-    gpa: "4.0"
+    startDate: "2022-09-12"
+    endDate: "2025-05-12"
+    # summary: "TODO"
     courses:
-      - "DB1101 - Basic SQL"
-      - "CS2011 - Java Introduction"
-awards:
-  - title: "Digital Compression Pioneer Award"
-    date: "2014-11-01"
-    awarder: "Techcrunch"
-    summary: "There is no spoon."
-publications:
-  - name: "Video compression for 3d media"
-    publisher: "Hooli"
-    releaseDate: "2014-10-01"
-    website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
-    summary: "Innovative middle-out compression algorithm that changes the way we store data."
+      - "CSCI 403 - Database Management"
+      - "CSCI 445 - Web Programming"
+      - "CSCI 471 - Computer Networks"
+      - "CSCI 507 - Computer Vision"
+# awards:
+#   - title: "Digital Compression Pioneer Award"
+#     date: "2014-11-01"
+#     awarder: "Techcrunch"
+#     summary: "There is no spoon."
+# publications:
+#   - name: "Video compression for 3d media"
+#     publisher: "Hooli"
+#     releaseDate: "2014-10-01"
+#     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
+#     summary: "Innovative middle-out compression algorithm that changes the way we store data."
 skills:
-  - name: "Web Development"
+  - name: "Desktop Development"
     level: "Master"
+    keywords:
+      - "Avalonia"
+      - "C#"
+      - "XAML"
+  - name: "UX Design"
+    level: "Master"
+    keywords:
+      - "Design Thinking"
+      - "Mockups"
+  - name: "Image Processing"
+    level: "Master"
+    keywords:
+      - "Pixinsight"
+      - "Python"
+      - "OpenCV"
+  - name: "Web Development"
+    level: "Intermediate"
     keywords:
       - "HTML"
       - "CSS"
       - "Javascript"
-  - name: "Compression"
-    level: "Master"
-    keywords:
-      - "Mpeg"
-      - "MP4"
-      - "GIF"
-languages:
-  - language: "English"
-    fluency: "Native speaker"
+# languages:
+#   - language: "English"
+#     fluency: "Native speaker"
 interests:
-  - name: "Wildlife"
+  - name: "Astrophotography"
     keywords:
-      - "Ferrets"
-      - "Unicorns"
+      - "Image processing"
+      - "Automation"
+      - "Remote Operation"
+      - "Optimization"
+      - "Science"
+      - "Manufacturing"
+  - name: "SCUBA Diving"
+    keywords:
+      - "Nature"
+      - "Equipment"
+      - "Physiology"
+      - "Science"
 references:
-  - name: "Erlich Bachman"
+  - name: "Patrick Loner, CEO Altius"
     reference: >
-      It is my pleasure to recommend Richard, his performance working as a consultant for Main St.
-      Company proved that he will be a valuable addition to any company.
+      TODO

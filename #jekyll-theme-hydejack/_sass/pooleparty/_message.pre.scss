@@ -27,7 +27,7 @@
 .note-sm {
   @extend .message;
   background: transparent;
-  color: var(--body-color);
+  color: var(--menu-text);
   font-size: smaller;
   border-left: 1px solid var(--border-color);
   padding: 1.2rem 1rem 0 1rem;
