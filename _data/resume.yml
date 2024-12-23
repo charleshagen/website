@@ -6,16 +6,16 @@ basics:
   label: "Software Engineer"
   picture: "https://nightphotons.s3.amazonaws.com/assets/website/pfp_256x256.jpg"
   email: "charlesjhagen@gmail.com"
-  phone: "(720)-477-8849"
+  # phone: ""
   website: "https://nightphotons.com"
   summary: >
-    TODO
-  # location:
-  #   address: "2712 Broadway St"
-  #   postalCode: "CA 94115"
-  #   city: "San Francisco"
-  #   countryCode: "US"
-  #   region: "California"
+    Highly motivated and results-oriented software engineer with a passion for applying technical solutions to complex problems in scientific and industrial settings.
+  location:
+  #   address: ""
+  #   postalCode: ""
+    city: "Denver"
+    countryCode: "US"
+    region: "Colorado"
   profiles:
     # - network: "Twitter"
     #   username: "RHendricksCEO"
@@ -27,6 +27,18 @@ basics:
       username: "charleshagen"
       url: "https://github.com/charleshagen/"
 work:
+  - company: "Fieldline Industries"
+    position: "Software Engineer"
+    website: "https://fieldlineindustries.com/"
+    startDate: "2024-02-01"
+    endDate: "2023-09-01"
+    summary: >
+      Fieldine specializes in manufacturing high precision atomic magnetometers for Medical and Defense applications. In my time at Fieldline, I worked on the Networked Quantum Magnetometer Array, which was used for precisely locating magnetic disturbances in an area of interest surrounding the deployment.
+    highlights:
+      - Develop and maintain APIs to connect to and access time series databases, enabling real-time data analysis and visualization.
+      - Implement strategies to optimize database performance, including indexing, partitioning, and query optimization, for efficient data retrieval and storage.
+      - Develop data analysis pipelines to extract insights from time series data, utilizing tools like Scottplot and Matplotlib for visualization.
+      - Design and implement APIs using Python and C# to provide access to time series data.
   - company: "Altius Space Machines"
     position: "Software Engineer"
     website: "https://voyagerspace.com/innovate/in-space-servicing-assembly/"
@@ -36,21 +48,21 @@ work:
       Altius Space Machines developed Electro-Permanent Magnet based hardware for Satellite docking and UAV systems to support a sustainable space by providing cost-effective and reliable satellite servicing and end-of-life services.
     highlights:
       - Develop and manufacture single and dual mode Electro-Permanent Magnet (EPM) technology for satellite docking and UAV deployment
-      - Develop novel algorithm for submillimeter-precision proximity and ranging detection with EPMs, leveraging scripted interface and advanced data analysis techniques
+      - Develop novel algorithm for sub-millimeter precision proximity and ranging detection with EPMs, leveraging scripted interface and advanced data analysis techniques
       - Maintain and update embedded firmware for EPMs, enabling critical features in C
       - Design & implement front end graphical interface (GUI) for EPMs to enable customers to plug-and-play development kits in C#
       - Design testing procedures for residual magnetism, holding force, and telemetry metrics using custom API
 volunteer:
-  - organization: "Denver Astronimical Society"
+  - organization: "Denver Astronomical Society"
     position: "ASIG Co-lead"
     website: "https://www.denverastro.org/"
     startDate: "2020-11-01"
     endDate: ""
-    summary: "The Denver Astronomical Society promotes the enjoyment and understanding of astronomical history, lore and phenomena by providing educational and observation opportunities for it's members, educcating the general public and conducting outreach activities."
+    summary: "The Denver Astronomical Society promotes the enjoyment and understanding of astronomical history, lore and phenomena by providing educational and observation opportunities for it's members, educating the general public and conducting outreach activities."
     highlights:
       - Hosts beginner and advanced astro-imaging special interest group (ASIG) meetings twice a month, teaching interested astronomers a range of topics including image processing techniques and the science of equipment.
       - Provides orientation for new members to access dark sky site.
-      - Restores and mantains dark sky site, assists with other club activities.
+      - Restores and maintains dark sky site, assists with other club activities.
   - organization: "CSM Astronomy Club"
     position: "President"
     startDate: "2022-09-01"
@@ -73,40 +85,66 @@ education:
       - "CSCI 471 - Computer Networks"
       - "CSCI 507 - Computer Vision"
 # awards:
-#   - title: "Digital Compression Pioneer Award"
-#     date: "2014-11-01"
-#     awarder: "Techcrunch"
-#     summary: "There is no spoon."
+#   - title: ""
+#     date: "2000-01-01"
+#     awarder: ""
+#     summary: ""
 # publications:
-#   - name: "Video compression for 3d media"
-#     publisher: "Hooli"
-#     releaseDate: "2014-10-01"
-#     website: "https://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)"
-#     summary: "Innovative middle-out compression algorithm that changes the way we store data."
+#   - name: ""
+#     publisher: ""
+#     releaseDate: "2000-01-01"
+#     website: ""
+#     summary: ""
 skills:
-  - name: "Desktop Development"
-    level: "Master"
+  - name: "Desktop Applications"
+    # level: "Master"
     keywords:
       - "Avalonia"
       - "C#"
       - "XAML"
-  - name: "UX Design"
-    level: "Master"
-    keywords:
-      - "Design Thinking"
-      - "Mockups"
-  - name: "Image Processing"
-    level: "Master"
-    keywords:
-      - "Pixinsight"
-      - "Python"
-      - "OpenCV"
+      - "Git"
+      - "Github"
   - name: "Web Development"
-    level: "Intermediate"
     keywords:
       - "HTML"
       - "CSS"
       - "Javascript"
+  - name: "Databases"
+    keywords:
+      - "SQLite"
+      - "Schema Design"
+      - "Postgres"
+      - "InfluxDB"  
+  - name: "Image Processing"
+    keywords:
+      - "Pixinsight"
+      - "Python"
+      - "OpenCV"
+projects:
+  - name: "PhotometricContinuumSubtraction"
+    url: https://github.com/charleshagen/pixinsight
+    description: "Photometric tool for calculating continuum flux ratios for robust continuum subtraction."
+    keywords:
+    - "Creator"
+  - name: "Lumidex"
+    url: https://github.com/alexhelms/lumidex
+    description: "Open source astrophotography database application written in C#, using Avalonia and SQLite."
+    keywords:
+    - "Contributor"
+  - name: "Predictive Exposure"
+    description: "Python-based predictive exposure compensation tool for constant brightness timelapses."
+    keywords:
+    - "Creator"
+  - name: "Mosaic Constructor"
+    description: "C#-based utility used to transform known astrometric coordinates into pixel-space for pre-interpolated mosaic generation."
+    keywords:
+    - "Creator"
+  - name: "SDSO Observatory"
+    url: https://sdso.space/
+    description: "Fully autonomous remote observatory in South East Arizona."
+    keywords:
+    - "Co-owner"
+
 # languages:
 #   - language: "English"
 #     fluency: "Native speaker"

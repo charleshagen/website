@@ -1,0 +1,31 @@
+{% if resume.projects.size > 0 %}
+<section class="npb">
+  <h2 id="projects" class="h3 hr-bottom" style="color: #2a97f7;">
+    {{ strings.resume.projects | default:"Projects" }}
+    <span class="symbol {{ icons.projects | default:'icon-file-empty' }}"></span>
+  </h2>
+  <dl class="projects">
+    {% for pro in resume.projects %}
+        <dt class="fl">
+            {% include components/link.html title=pro.name href=pro.url span_class="bc" %}
+        </dt>
+        {% if pro.description.size > 0 %}
+        <div class="faded">
+            <br>
+            <p style="margin-bottom: 0.1em;">{{ pro.description }}</p>
+        </div>
+        {% endif %}
+        {% if pro.keywords.size > 0 %}
+        <div>
+          <ul class="tags">
+            {% for key in pro.keywords %}
+              <li class="tag">{{ key }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </dd>
+    {% endfor %}
+  </dl>
+</section>
+{% endif %}
