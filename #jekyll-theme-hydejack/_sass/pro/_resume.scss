@@ -129,6 +129,16 @@
     }
   }
 
+  .projects {
+    > dt {
+      margin-bottom: 0;
+    }
+
+    > dd {
+      margin: 0;
+    }
+  }
+
   $pad: 2.5rem;
 
   .columns {

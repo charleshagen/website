@@ -6,9 +6,10 @@
   </h2>
   <dl class="projects">
     {% for pro in resume.projects %}
-        <dt class="fl">
-            {% include components/link.html title=pro.name href=pro.url span_class="bc" %}
-        </dt>
+      <dt class="fl">
+          {% include components/link.html title=pro.name href=pro.url %}
+      </dt>
+      <dd>
         {% if pro.description.size > 0 %}
         <div class="faded">
             <br>
