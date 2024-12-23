@@ -1,12 +1,14 @@
 ---
-layout: page
+layout: post
+categories: guides
+tags: advanced
 title: Advanced Narrowband Combination
 description: >
-  This chapter covers advanced topics, such as offline support and custom JS builds. Codings skills are recommended.
+    Managing and incorporating separate narrowband signal into broadband images.
 hide_description: true
 sitemap: false
 ---
-0. this unordered seed list will be replaced by toc as unordered list
+0. _
 {:toc}
 
 ## Continuum Subtraction
@@ -25,3 +27,8 @@ sitemap: false
 * **S-II**
   * With Sii data, you will often find that there is a significant amount of Ha emission in the broadband signal as Ha is far more prevalent in most emission nebulae than Sii. In attempting to remove continuum signal, you will likely find that there are regions correlating with the presence of Ha that are over subtracted, yielding an image that has unpleasant “holes”. 
   * The solution is to first continuum subtract your Ha signal, then remove the Ha emission from the broadband red image, isolating mostly the continuum structure, then using that resulting image as the new continuum reference image.
+
+
+<!-- Working area, do not include in the final article without revision -->
+
+lay out the different methods, PCS is preferred, the color calibration flow is 

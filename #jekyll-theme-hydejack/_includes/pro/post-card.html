@@ -26,15 +26,14 @@
 
 <article class="project-card">
   <a href="{{ post.url | relative_url }}" class="no-hover no-print-link {% unless post.hide_image %}flip-project{% endunless %}" tabindex="-1">
-    <!-- If the image is hidden, dont include the image flip class (stops transition animation) -->
-      {% if project.hide_image %}
-      <div class="project-card-img aspect-ratio sixteen-nine">
-    {% else %}
-      <div class="project-card-img aspect-ratio sixteen-nine {% if post.image %}flip-project-img{% else %}fallback-img{% endif %}">
-    {% endif %}
+    <!-- If the image is hidden, dont include the image flip class (stops transition animation) -->  
+    <div class="project-card-img aspect-ratio sixteen-nine {% unless project.hide_image %}{% if post.image %}flip-project-img{% else %}fallback-img{% endif %}{% endunless %}">
     <!-- End change -->
       {% if post.image %}
         {% include_cached components/hy-img.html img=post.image alt=post.title sizes=sizes width=864 height=486 %}
+      {% endif %}
+      {% if post.pinned %}
+          <span class="icon-star-full" style="padding: 7px; display: inline-block; color: rgba(180,180,180,0.6);" ></span>
       {% endif %}
     </div>
   </a>

@@ -13,21 +13,64 @@ layout: page
 
 {% assign prev_date = 0 %}
 {% if page.no_groups %}<div class="columns {% unless no_third_column %}columns-break{% endunless %}">{% endif %}
-{% for post in posts %}
-  {% assign current_date = post.date | date:list_group_by %}
+<!-- Pinned posts first -->
+{% if page.no_groups %}
+  {% for post in posts %}
+    {% if post.pinned %}
+      {% assign current_date = post.date | date:list_group_by %}
 
-  {% unless page.no_groups %}{% if current_date != prev_date %}
-    {% unless forloop.first %}</div>{% endunless %}
+      {% unless page.no_groups %}{% if current_date != prev_date %}
+        {% unless forloop.first %}</div>{% endunless %}
 
-    <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
-    <div class="columns columns-break">
-    {% assign prev_date = current_date %}
-  {% endif %}{% endunless %}
+        <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
+        <div class="columns columns-break">
+        {% assign prev_date = current_date %}
+      {% endif %}{% endunless %}
 
-  {% assign featured = page.featured | default:post.featured %}
-  <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
-    {% include_cached pro/post-card.html post=post featured=featured %}
-  </div>
+      {% assign featured = page.featured | default:post.featured %}
+      <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+        {% include_cached pro/post-card.html post=post featured=featured %}
+      </div>
+    {% endif %}
+    {% endfor %}
+    {% for post in posts %}
+    {% unless post.pinned %}
+      {% assign current_date = post.date | date:list_group_by %}
 
+      {% unless page.no_groups %}{% if current_date != prev_date %}
+        {% unless forloop.first %}</div>{% endunless %}
+
+        <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
+        <div class="columns columns-break">
+        {% assign prev_date = current_date %}
+      {% endif %}{% endunless %}
+
+      {% assign featured = page.featured | default:post.featured %}
+      <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+        {% include_cached pro/post-card.html post=post featured=featured %}
+      </div>
+    {% endunless %}
+    {% if forloop.last %}</div>{% endif %}
+  {% endfor %}
+{% else %} 
+<!-- Else -->
+  {% for post in posts %}
+    {% assign current_date = post.date | date:list_group_by %}
+
+    {% unless page.no_groups %}{% if current_date != prev_date %}
+      {% unless forloop.first %}</div>{% endunless %}
+
+      <h2 id="{{ list_group_by | slugify }}-{{ current_date | slugify }}">{{ current_date }}</h2>
+      <div class="columns columns-break">
+      {% assign prev_date = current_date %}
+    {% endif %}{% endunless %}
+
+    {% assign featured = page.featured | default:post.featured %}
+    <div class="column {% if featured %}column-1{% else %}column-1-2{% endif %}">
+      {% include_cached pro/post-card.html post=post featured=featured %}
+    </div>
   {% if forloop.last %}</div>{% endif %}
-{% endfor %}
+  {% endfor %}
+{% endif %}
+
+

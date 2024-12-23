@@ -17,9 +17,6 @@ basics:
     countryCode: "US"
     region: "Colorado"
   profiles:
-    # - network: "Twitter"
-    #   username: "RHendricksCEO"
-    #   url: ""
     - network: "LinkedIn"
       username: "Charles Hagen"
       url: "https://www.linkedin.com/in/charles-hagen-615474218/"
@@ -97,7 +94,7 @@ education:
 #     summary: ""
 skills:
   - name: "Desktop Applications"
-    # level: "Master"
+    # level: ""
     keywords:
       - "Avalonia"
       - "C#"

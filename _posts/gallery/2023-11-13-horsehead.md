@@ -8,11 +8,11 @@ caption:     The Horsehead Nebula \| HaRGB \| 14 hours
 description: >
   TODO
 image: 
-  path: https://nightphotons.s3.amazonaws.com/assets/img/gallery/Horsehead.jpg
+  path: https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/horsehead/image_x1,0.jpg
   srcset: 
-    3000w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/Horsehead.jpg
-    1500w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/Horsehead_x0,5.jpg
-    750w:  https://nightphotons.s3.amazonaws.com/assets/img/gallery/Horsehead_x0,25.jpg
+    3000w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/horsehead/image_x1,0.jpg
+    1500w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/horsehead/image_x0,5.jpg
+    750w:  https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/horsehead/image_x0,25.jpg
 links:
   - title:   Full Resolution
     url:     https://app.astrobin.com/i/8wf274

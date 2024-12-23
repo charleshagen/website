@@ -3,6 +3,7 @@ layout: post
 categories: guides
 tags: advanced
 title: Noise Deep Dive
+pinned: true
 caption: Understanding the mathematical basis for noise analysis.
 description: >
     Understanding the mathematical basis for noise analysis.

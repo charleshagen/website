@@ -8,11 +8,11 @@ caption:     The Leo Triplet \| HaRGB \| 150 hours
 description: >
   M65, M66, and NGC 3628 - The Leo Triplet, imaged in Ha + RGB under Bortle 1 skies at SDSO. 
 image: 
-  path: https://nightphotons.s3.amazonaws.com/assets/img/gallery/LeoTriplet.jpg
+  path: https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/leo_triplet/image_x1,0.jpg
   srcset: 
-    3000w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/LeoTriplet.jpg
-    1500w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/LeoTriplet_x0,5.jpg
-    750w:  https://nightphotons.s3.amazonaws.com/assets/img/gallery/LeoTriplet_x0,25.jpg
+    3000w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/leo_triplet/image_x1,0.jpg
+    1500w: https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/leo_triplet/image_x0,5.jpg
+    750w:  https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/leo_triplet/image_x0,25.jpg
 links:
   - title:   Full Resolution
     url:     https://app.astrobin.com/i/ghgbmy
