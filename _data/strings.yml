@@ -142,7 +142,7 @@ resume:
     maritalStatus:     icon-man-woman
     email:             icon-mail1
     phone:             icon-phone
-    website:           icon-home3
+    website:           icon-sphere
     work:              icon-briefcase
     volunteer:         icon-earth
     education:         icon-library
@@ -151,4 +151,5 @@ resume:
     references:        icon-quotes-right
     languages:         icon-bubbles
     skills:            icon-wrench
+    projects:            icon-lab
     interests:         icon-heart

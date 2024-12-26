@@ -3,16 +3,16 @@ layout: post
 categories: guides
 tags: advanced
 title: Noise Deep Dive
-pinned: true
+# pinned: true
 caption: Understanding the mathematical basis for noise analysis.
 description: >
     Understanding the mathematical basis for noise analysis.
 image: 
-  path: https://nightphotons.s3.amazonaws.com/assets/img/guides/NoiseArticle.jpg
+  path: https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/NoiseArticle.jpg
   srcset: 
-    1920w: https://nightphotons.s3.amazonaws.com/assets/img/guides/NoiseArticle.jpg
-    960w: https://nightphotons.s3.amazonaws.com/assets/img/guides/NoiseArticle_x0,5.jpg
-    480w:  https://nightphotons.s3.amazonaws.com/assets/img/guides/NoiseArticle_x0,25.jpg
+    1920w: https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/NoiseArticle.jpg
+    960w: https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/NoiseArticle_x0,5.jpg
+    480w:  https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/NoiseArticle_x0,25.jpg
 sitemap: false
 hide_last_modified: true
 excerpt_separator: <!--more-->
@@ -84,7 +84,7 @@ Noise is generated in countless ways 'underneath the hood' in modern cameras, ho
 
 The Poisson distribution describes the probability of independent, constant-rate events occurring, such as photon detection or dark current charge buildup. As the mean rate increases, so too does the variance.
 
-![Poisson Distribution](https://nightphotons.s3.amazonaws.com/assets/img/guides/noise_PoissonDistribution.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="85%"}
+![Poisson Distribution](https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/noise_PoissonDistribution.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="85%"}
 
 Poisson probability distributions at $$\small{\lambda =}$$ 4, 10, 20
 {:.figcaption}

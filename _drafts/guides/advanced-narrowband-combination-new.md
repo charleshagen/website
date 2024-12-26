@@ -11,6 +11,8 @@ sitemap: false
 0. _
 {:toc}
 
+## Introduction
+
 ## Continuum Subtraction
 
 ### What is Continuum Subtraction?
@@ -28,7 +30,8 @@ sitemap: false
   * With Sii data, you will often find that there is a significant amount of Ha emission in the broadband signal as Ha is far more prevalent in most emission nebulae than Sii. In attempting to remove continuum signal, you will likely find that there are regions correlating with the presence of Ha that are over subtracted, yielding an image that has unpleasant “holes”. 
   * The solution is to first continuum subtract your Ha signal, then remove the Ha emission from the broadband red image, isolating mostly the continuum structure, then using that resulting image as the new continuum reference image.
 
+## Independent Processing
 
-<!-- Working area, do not include in the final article without revision -->
+## Recombination
 
-lay out the different methods, PCS is preferred, the color calibration flow is 
+With both sets of images fully separated and independently processed, it's time to recombine. 

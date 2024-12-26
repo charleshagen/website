@@ -4,6 +4,11 @@
 {% assign hide_image       = include.hide_image       %}
 {% assign hide_description = include.hide_description %}
 
+{% assign slug = page.categories[0] %}
+{% assign posts = site.categories[slug] | default:site.tags[slug] | default:site.posts %}
+{% assign prev_post = site.categories[slug][0] | default:site.tags[slug][0] | default:site.posts[0] %}
+
+
 <article id="post{{ post.id | replace:'/','-' }}" class="page post mb6" role="article">
   <header>
     <h1 class="post-title flip-project-title">
@@ -32,6 +37,26 @@
       <span class="ellipsis mr1">
         {{ foobar }}
       </span>
+      
+      <!-- Previous / Next Buttons -->
+      <span class="ml1" style="display: flex;">
+        {% for other_post in posts %}
+            {% if other_post == post %}
+              {% unless forloop.first %}<a href="{{ prev_post.url }}">{% endunless %}
+                <p><span class="icon-arrow-left2" style="background-color: rgba(128,128,128,0.15); padding:5px; border-radius: 5px;"></span></p>
+              {% unless forloop.first %}</a>{% endunless %}
+            {% endif %}
+          {% unless forloop.first %}
+            {% if prev_post == post or (forloop.last and post == other_post) %}
+            {% unless forloop.last and post == other_post %}<a href="{{ other_post.url }}">{% endunless %}
+              <p style="margin-left: 0.1em;"><span class="icon-arrow-right2" style="background-color: rgba(128,128,128,0.15); padding:5px; border-radius: 5px;"></span></p>
+            {% unless forloop.last and post == other_post %}</a>{% endunless %}
+            {% endif %}
+          {% endunless %}
+          {% assign prev_post = other_post %}
+        {% endfor %}
+      </span>
+
       {% unless site.hydejack.hide_dates or site.hydejack.hide_last_modified or post.hide_last_modified %}
         {% if post.last_modified_at %}
           {% assign d1 = post.date             | date:"%Y-%m-%d" %}
