@@ -2,9 +2,9 @@
 layout: post
 categories: guides
 tags: advanced
-title: Advanced Narrowband Combination
+title: Continuum Subtraction
 description: >
-    Managing and incorporating separate narrowband signal into broadband images.
+    New and improved advanced narrowband processing guide
 hide_description: true
 sitemap: false
 ---
@@ -12,6 +12,11 @@ sitemap: false
 {:toc}
 
 ## Introduction
+Combining narrowband and broadband astrophotography is a fantastic way to 
+First step into 'advanced processing'
+Elevates your astrophotography
+Advanced technique that allows for better control of different 
+
 
 ## Continuum Subtraction
 
@@ -35,3 +40,6 @@ sitemap: false
 ## Recombination
 
 With both sets of images fully separated and independently processed, it's time to recombine. 
+
+Continue with [Noise](noise-sources.md){:.heading.flip-title}
+{:.read-more}

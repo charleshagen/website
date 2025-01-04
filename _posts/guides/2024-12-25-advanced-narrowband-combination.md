@@ -1,11 +1,17 @@
 ---
 layout: post
 categories: guides
-tags: basic
+tags: advanced
 title: Advanced Narrowband Combination
 description: >
     Managing and incorporating separate narrowband signal into broadband images.
-hide_description: true
+# hide_description: true
+image:
+    path: https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/thumbnail_x1,0.jpg
+    srcset: 
+        2400w: https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/thumbnail_x1,0.jpg
+        1200w: https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/thumbnail_x0,5.jpg
+        600w:  https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/thumbnail_x0,25.jpg
 sitemap: false
 ---
 
@@ -17,9 +23,9 @@ Narrowband and Broadband are often thought of as completely independent fields o
 
 <!-- Insert image -->
 
-<div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 708/400; margin-bottom: 30px; width:100%;">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/old_advanced_narrowband/NoAddition.jpg" alt="Image 1">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/old_advanced_narrowband/HaCloudAddition.jpg" alt="Image 2" style="opacity:0;">
+<div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 1854/1264; margin-bottom: 30px; width:100%;">
+  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/NoAddition.jpg" alt="Image 1">
+  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/HaCloudAddition.jpg" alt="Image 2" style="opacity:0;">
 </div>
 
 
@@ -57,9 +63,9 @@ RGB/k:
 $T[0] - ($T[1] - med( $T[1]))
 ```
 
-<div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 708/400; margin-bottom: 30px; width:100%;">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/old_advanced_narrowband/RGB.jpg" alt="Image 1">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/old_advanced_narrowband/RGB_BN_CC.jpg" alt="Image 2" style="opacity:0;">
+<div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 1854/1264; margin-bottom: 30px; width:100%;">
+  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/RGB.jpg" alt="Image 1">
+  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/RGB_BN_CC.jpg" alt="Image 2" style="opacity:0;">
 </div>
 
 <hr>
@@ -86,7 +92,7 @@ Symbols:
 f = [ input value of f here ]
 ```
 
-<img src="https://nightphotons.s3.amazonaws.com/assets/img/old_advanced_narrowband/f0.14.jpg">
+<img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/f0.14.jpg">
 
 
 <hr>
@@ -124,7 +130,7 @@ m = 0.999,
 
 <hr>
 
-<img src="https://nightphotons.s3.amazonaws.com/assets/img/old_advanced_narrowband/HaAddition.jpg">
+<img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/HaAddition.jpg">
 
 
 <!-- Mouseover Swap -->
