@@ -20,14 +20,12 @@ excerpt_separator: <!--more-->
 {:toc}
 
 ## Introduction
-
 <div class="rightside">
     <img src="https://nightphotons.s3.amazonaws.com/assets/img/software/rename_images/screenshot.png" alt="Graphical interface"/>
 </div>
 
+<!-- TODO: Explain why this is necessary -->
 The RenameImages script provides a fast way to quickly rename and close automated outputs from most any integration routine to your preference. It uses regular expressions to target and either rename or close all views that are open in the current pixinsight instance.
-
-
 
 <hr>
 
@@ -41,11 +39,12 @@ It is recommended that you use this script at the beginning of your process to m
 <!-- REGULAR EXPRESSIONS -->
 ### Regular Expressions
 {:style="margin-top:2.5rem;"}
+<!-- TODO: Rewrite this section, people dont know what indexes youre talking about  -->
 Regular expressions sit at the core of the RenameImages script, any images with identifiers that match the provided regex will be either closed or renamed. The zero index is reserved for the entire regex match and all following indexes map to each grouping in the order that they are found. One regex flag is supported, being `i` for case insensitivity. 
-{:style="margin-left:0.5rem; margin-bottom:0.5rem;"}
+{:style="margin-left:0.5rem; margin-bottom:1.5rem;"}
 
 Whether you have lots of experience with regular expressions, or none at all, [Regex101](https://regex101.com/) is an excellent tool for drafting and testing your regex code. It has syntax highlighting, explanations of all tokens, and makes drafting regex very easy.
-{:.faded style="margin-left:0.5rem; margin-bottom:2.5rem;"}
+{:style="margin-left:0.5rem; margin-bottom:2.5rem;"}
 
 **Example:**
 {:style="margin-left:0.5rem"}
@@ -67,7 +66,7 @@ masterLight.*EXPOSURE_([0-9]*).*FILTER_([a-zA-Z0-9]*)
 <!-- PATTERNING -->
 ### Patterning
 {:style="margin-top:2.5rem;"}
-RenameImages implements patterning with support for free text, regex group content, and FITS header values. Substituted values also accept formatting flags. All generated IDs will be guaranteed to be unique and valid automatically. It is important to remember that image identifiers in Pixinsight can only contain alphanumerics and underscores and must not start with a number. 
+RenameImages implements patterning with support for free text, regex group content, and FITS header values. Substituted values also accept formatting flags. All generated IDs are guaranteed to be unique and valid automatically. It is important to remember that image identifiers in Pixinsight can only contain alphanumerics and underscores and must not start with a number. 
 {:style="margin-left:0.5rem; margin-bottom:1.5rem;"}
 
 **Free Text**
@@ -100,20 +99,20 @@ Settings apply to both closing and renaming where appropriate.
 
 **Modify Images with History**
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-When enabled, images can be renamed or closed even if the image contains process history. This setting is disabled by default for safety.
+Images containing process history, past or future, will renamed or closed. This setting is disabled by default for safety.
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 **Iconize after Rename**
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-When enabled, each image is iconized when renamed. Useful for large datasets or mosaics when image windows can become cumbersome.
+Iconize image if it has been renamed. Useful for large datasets or mosaics when image windows can become cumbersome.
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 **Force Close**
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-When enabled, the user will not be prompted upon image closure for images with process history. For sensitive cases or if used late in a project, disable this option. 
+Do not prompt when closing an image with process history. For sensitive cases or if used late in a project, disable this option. 
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
-This option should have no effect if `Modify Images with History` is disabled.
+This option will have no effect if `Modify Images with History` is disabled.
 {:.note style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 <hr>
@@ -170,7 +169,6 @@ $OBJECT-p$_narrow // Pattern
 ~~~
 {:style="margin-left:1.5rem"}
 
-
 <hr>
 
 ## Installation
@@ -195,6 +193,7 @@ If the scripts do not appear under `Scripts > NightPhotons`, you may need to fea
 }
 
 .rightside img {
+    border-radius: 5px;
     width:100%;
     display:block; 
     margin-left:auto; 

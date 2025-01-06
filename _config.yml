@@ -52,18 +52,14 @@ menu:
     url:               /gallery/
   - title:             Blog
     url:               /blog/
-  # - title:             Projects
-  #   url:               /projects/
   # - title:             Résumé*
   #   url:               /resume/
   - title:             Guides
     url:               /guides/
-  # - title:             Documentation
-  #   url:               /docs/
   - title:             Software
     url:               /software/
-  - title:             About
-    url:               /about/
+  - title:             Contact
+    url:               /contact/
   
 
 # Add links to the footer.

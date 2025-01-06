@@ -26,7 +26,8 @@ permalink: /gallery/horsehead
 excerpt_separator: <!--more-->
 ---
 <!--more-->
-TODO
+
+### Acquisition
 
 | Filter     | Exposures    | Integration |
 |------------|--------------|-------------|

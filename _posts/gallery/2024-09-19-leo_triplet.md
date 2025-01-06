@@ -32,10 +32,11 @@ M65, M66, and NGC 3628 - The Leo Triplet, imaged in Ha + RGB under Bortle 1 skie
 
 ### Acquisition
 
-| Filter     | Exposures | Integration |
-|------------|-----------|-------------|
-| Luminance  | 530×300″  | 44h 10′     |
-| Red        | 190×300″  | 15h 50′     |
-| Green      | 200×300″  | 16h 40′     |
-| Blue       | 190×300″  | 15h 50′     |
-| H-alpha    | 341×600″  | 56h 50′     |
+| Filter | Exposures | Integration |
+|--------|----------:|------------:|
+| Ha     |       341 |     56.8 hr |
+| Lum    |       530 |     44.2 hr |
+| Green  |       200 |     16.7 hr |
+| Red    |       190 |     15.8 hr |
+| Blue   |       190 |     15.8 hr |
+| Total  |           |    149.3 hr |
