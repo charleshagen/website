@@ -27,8 +27,8 @@ excerpt_separator: <!--more-->
 <div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 708/400; margin-bottom: 20px; margin-top: 40px; width:90%;">
   <img src="https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/wr134/pn_candidate_hoo1.jpg" alt="Image 1">
   <img src="https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/wr134/pn_candidate_rgb.jpg" alt="Image 2" style="opacity:0;">
-  <span class="center button right icon-arrow-right2"></span>
-  <span class="center button left icon-arrow-left2"></span>
+  <!-- <span class="center button right icon-arrow-right2"></span>
+  <span class="center button left icon-arrow-left2"></span> -->
 </div>
 
 Before and After single channel DeepSNR
@@ -185,7 +185,8 @@ See my [Contact](/contact) page for info on how to contact me!
 </style>
 
 <script>
-document.getElementById('_pushState').addEventListener('hy-push-state-after', function() {
+
+document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
     initMouseover();
 });
 initMouseover();
@@ -194,25 +195,25 @@ function initMouseover() {
     const mouseovers = document.querySelectorAll(".mouseover-swap");
     mouseovers.forEach(pair => {
         const img2 = pair.querySelectorAll("img")[1];
-        const buttons = pair.querySelectorAll(".button");
-        buttons.forEach(button => {
-          button.addEventListener("click", function() {
-            if (img2.style.opacity == 0) {
-              img2.style.opacity = 1;
-            } else {
-              img2.style.opacity = 0;
-            }
-          });
-        })
+        // const buttons = pair.querySelectorAll(".button");
+        // buttons.forEach(button => {
+        //   button.addEventListener("click", function() {
+        //     if (img2.style.opacity == 0) {
+        //       img2.style.opacity = 1;
+        //     } else {
+        //       img2.style.opacity = 0;
+        //     }
+        //   });
+        // })
 
         
-        // pair.addEventListener("mouseover", function() {
-        //   img2.style.opacity = 1;
-        // });
+        pair.addEventListener("mouseover", function() {
+          img2.style.opacity = 1;
+        });
         
-        // pair.addEventListener("mouseout", function() {
-        //   img2.style.opacity = 0;
-        // });
+        pair.addEventListener("mouseout", function() {
+          img2.style.opacity = 0;
+        });
     });
 }
 </script>
