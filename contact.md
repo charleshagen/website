@@ -5,6 +5,9 @@ title:  Contact
 
 <div class="container">
   <form target="_blank" action="https://formsubmit.co/f896db85ddbc788ab12f5d88aa4a8a1d" method="POST">
+    <input type="hidden" name="_template" value="box">
+    <!-- <input type="hidden" name="_captcha" value="false"> -->
+    <input type="hidden" name="_next" value="http://127.0.0.1:4000/">
     <div class="form-group">
       <div class="form-row">
         <div class="col">
