@@ -27,8 +27,8 @@ excerpt_separator: <!--more-->
 <div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 708/400; margin-bottom: 20px; margin-top: 40px; width:90%;">
   <img src="https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/wr134/pn_candidate_hoo1.jpg" alt="Image 1">
   <img src="https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/wr134/pn_candidate_rgb.jpg" alt="Image 2" style="opacity:0;">
-  <!-- <span class="center button right icon-arrow-right2"></span>
-  <span class="center button left icon-arrow-left2"></span> -->
+  <span class="center button right icon-arrow-right2"></span>
+  <span class="center button left icon-arrow-left2"></span>
 </div>
 
 Before and After single channel DeepSNR
@@ -124,7 +124,7 @@ With the RGB color image created, we will finish up by performing the denoise an
     /*file: "RGB/k"*/Avg($T[0],$T[1],$T[2])
     ~~~
 3. **Blending**<br>
-    In step one, DeepSNR was set to 100%, we will blend this back with the original to create a natural noise profile. On the original grayscale drizzled image, apply an IntegerResample of 2x and name this image `Org`. Then in PixelMath, use the following expression to quickly iterate denoise amounts.<br><br>
+    In step one, DeepSNR was set to 100%, we will blend this back with the original to create a natural noise profile. If you used the drizzle method, apply an IntegerResample set to 2x downsample and name this image `Org`. If you used the Triple Integration method, bring in the stack containing all data and name it `Org`. Then in PixelMath, use the following expression to quickly iterate denoise amounts.<br><br>
     ~~~js
     /*file: "RGB/k"*/(Org * F) + (NR * ~F)
     ~~~
@@ -185,35 +185,30 @@ See my [Contact](/contact) page for info on how to contact me!
 </style>
 
 <script>
-
-document.getElementById('_pushState').addEventListener('hy-push-state-load', function() {
-    initMouseover();
-});
 initMouseover();
 
 function initMouseover() {
-    const mouseovers = document.querySelectorAll(".mouseover-swap");
-    mouseovers.forEach(pair => {
-        const img2 = pair.querySelectorAll("img")[1];
-        // const buttons = pair.querySelectorAll(".button");
-        // buttons.forEach(button => {
-        //   button.addEventListener("click", function() {
-        //     if (img2.style.opacity == 0) {
-        //       img2.style.opacity = 1;
-        //     } else {
-        //       img2.style.opacity = 0;
-        //     }
-        //   });
-        // })
-
-        
-        pair.addEventListener("mouseover", function() {
+  const mouseovers = document.querySelectorAll(".mouseover-swap");
+  mouseovers.forEach(pair => {
+    const img2 = pair.querySelectorAll("img")[1];
+    const buttons = pair.querySelectorAll(".button");
+    buttons.forEach(button => {
+      button.addEventListener("click", function() {
+        if (img2.style.opacity == 0) {
           img2.style.opacity = 1;
-        });
-        
-        pair.addEventListener("mouseout", function() {
+        } else {
           img2.style.opacity = 0;
-        });
+        }
+      });
+    })
+
+    /*pair.addEventListener("mouseover", function() {
+        img2.style.opacity = 1;
     });
+    
+    pair.addEventListener("mouseout", function() {
+        img2.style.opacity = 0;
+    });*/
+  });
 }
 </script>
