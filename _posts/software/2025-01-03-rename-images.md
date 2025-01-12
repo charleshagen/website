@@ -38,7 +38,7 @@ It is recommended that you use this script at the beginning of your process to m
 <!-- REGULAR EXPRESSIONS -->
 ### Regular Expressions
 {:style="margin-top:2.5rem;"}
-Regular expressions, or "regex", allow for finding, extracting, and manipulating text data. When the script is executed, every image open in Pixinsight is compared against the user-defined regular expression. If it matches the regex, the specified action will be performed, either renaming or closing the image. Within each regular expression, there are also "groupings", notated with parentheses. These captured groups are accessible when writing name patterns, allowing you to manipulate sections of, or the entirety of the existing identifier.  
+Regular expressions, or "regex", allow for finding, extracting, and manipulating text data. When the script is executed, the identifier of every image open in Pixinsight is compared against the user-defined regular expression. If it matches the regex, the specified action will be performed, either renaming or closing the image. Within each regular expression, there are also "groupings", notated with parentheses. These captured groups are accessible when writing name patterns, allowing you to manipulate sections of, or the entirety of the existing identifier.  
 {:style="margin-left:0.5rem; margin-bottom:1.5rem;"}
 
 Whether you have lots of experience with regular expressions, or none at all, [Regex101](https://regex101.com/){:.faded} is an excellent tool for drafting and testing your regex code. It has syntax highlighting, explanations of all tokens, and makes drafting regex very easy.
