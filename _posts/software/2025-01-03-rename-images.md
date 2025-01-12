@@ -189,6 +189,13 @@ NightPhotons Pixinsight Repository --- (Do not open this link in your browser, t
 If the scripts do not appear under `Scripts > NightPhotons`, you may need to feature the scripts. Navigate to `Scripts > Feature Scripts`, then press `Add` and select your scripts folder, usually found at `C:\Program Files\PixInsight\src\scripts`. The scripts should now appear in your list.
 {:style="margin-left:1rem;"}
 
+<hr>
+
+Please feel free to contact me with any questions!
+{:style="font-weight:bold; font-size:1.25rem; margin-bottom:0.5rem"}
+See my [Contact](/contact) page for info on how to contact me!
+{:style="margin-left:1rem;"}
+
 <style>
 .rightside {
     width: 50%;
