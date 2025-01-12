@@ -5,7 +5,7 @@ basics:
   name: "Charles Hagen"
   label: "Software Engineer"
   picture: "https://nightphotons.s3.amazonaws.com/assets/website/pfp_256x256.jpg"
-  email: "charlesjhagen@gmail.com"
+  # email: ""
   # phone: ""
   website: "https://nightphotons.com"
   summary: >

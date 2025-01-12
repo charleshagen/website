@@ -3,7 +3,7 @@
 # Change `author1` to your shortname.
 author1:
   name:              Charles Hagen
-  email:             charlesjhagen@gmail.com
+  # email:             
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
@@ -29,7 +29,7 @@ author1:
     # instagram:       nightphotons
     youtube:         charliehagen8174
     astrobin:        https://app.astrobin.com/u/jimmythechicken#gallery
-    email:           charlesjhagen@gmail.com
+    # email:           
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
