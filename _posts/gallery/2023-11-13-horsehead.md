@@ -5,8 +5,8 @@ tags:        nebula
 title:       The Horsehead
 date:        13 Nov 2023
 caption:     The Horsehead Nebula \| HaRGB \| 14 hours
-description: >
-  TODO
+# description: >
+#   TODO
 image: 
   path: https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/horsehead/image_x1,0.jpg
   srcset: 

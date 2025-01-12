@@ -63,10 +63,11 @@ This method relies on a few key principles of emission. If a theoretical filter 
 
     - Rename this to “NB” for future steps.
 
-```
-RGB/k:
+~~~js
+/*file: "RGB/k"*/
 $T[0] - ($T[1] - med( $T[1]))
-```
+~~~
+{:style="margin-left:1.5rem;"}
 
 <div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 1854/1264; margin-bottom: 30px; width:100%;">
     <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/RGB.jpg" alt="Without Color Calibration">
@@ -95,13 +96,16 @@ Before and After Color Calibration
 
 - After running the above PixelMath, you should notice a change in your image. If the image has gone too dark, the continuum data has been over-subtracted and you need to lower your f value. If there is still any obvious continuum signal remaining, you will need to increase your f value and run the process again. Undo the PixelMath, make the adjustment to the f value, and adjust until the data has no remaining continuum signal and no overcorrected areas.
 
-```
-RGB/k:
+~~~js
+/*file: "RGB/k"*/
 Narrowband - f * (Continuum- med(Continuum))
-
-Symbols:
-f = [ input value of f here ]
-```
+~~~
+{:style="margin-left:1.5rem;"}
+~~~js
+/*file: "Symbols"*/
+f = 0.1,
+~~~
+{:style="margin-left:1.5rem;"}
 
 <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/f0.14.jpg">
 
@@ -123,22 +127,30 @@ Example of properly continuum subtracted narrowband image
 
     - Depending on the look that you’d like, adjust the B and G values, these are simple percentages. If you prefer a more pink tone rather than a red, add more blue, etc. (This works the same way for other bands as well. for Oiii, I recommend weights of 0, 0.75, 1.0 for RGB respectively)
 
-```
-Red:
+~~~js
+/*file: "Red"*/
 $T * ~R + R * mtf(~m, (mtf(m, $T) + mtf(m, NB)))
-
-Green:
+~~~
+{:style="margin-left:2.5rem;"}
+~~~js
+/*file: "Green"*/
 $T * ~G + G * mtf(~m, (mtf(m, $T) + mtf(m, NB)))
-
-Blue:
+~~~
+{:style="margin-left:2.5rem;"}
+~~~js
+/*file: "Blue"*/
 $T * ~B + B * mtf(~m, (mtf(m, $T) + mtf(m, NB)))
-
-Symbols:
+~~~
+{:style="margin-left:2.5rem;"}
+~~~js
+/*file: "Symbols"*/
 R = 1.0,
 G = 0.0,
 B = 0.05,
 m = 0.999,
-```
+~~~
+{:style="margin-left:2.5rem;"}
+
 
 <hr>
 

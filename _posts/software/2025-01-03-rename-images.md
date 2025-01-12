@@ -24,8 +24,7 @@ excerpt_separator: <!--more-->
     <img src="https://nightphotons.s3.amazonaws.com/assets/img/software/rename_images/screenshot.png" alt="Graphical interface"/>
 </div>
 
-<!-- TODO: Explain why this is necessary -->
-The RenameImages script provides a fast way to quickly rename and close automated outputs from most any integration routine to your preference. It uses regular expressions to target and either rename or close all views that are open in the current pixinsight instance.
+The RenameImages script provides a fast way to quickly rename and close automated outputs from most any integration routine to your preference. This speeds up the very beginning of your processing routine, especially for mosaics where you may have many files that will all need to be named differently. It uses regular expressions to target and either rename or close all views that are open in the current pixinsight instance.
 
 <hr>
 
@@ -39,11 +38,15 @@ It is recommended that you use this script at the beginning of your process to m
 <!-- REGULAR EXPRESSIONS -->
 ### Regular Expressions
 {:style="margin-top:2.5rem;"}
-<!-- TODO: Rewrite this section, people dont know what indexes youre talking about  -->
-Regular expressions sit at the core of the RenameImages script, any images with identifiers that match the provided regex will be either closed or renamed. The zero index is reserved for the entire regex match and all following indexes map to each grouping in the order that they are found. One regex flag is supported, being `i` for case insensitivity. 
+Regular expressions, or "regex", allow for finding, extracting, and manipulating text data. When the script is executed, every image open in Pixinsight is compared against the user-defined regular expression. If it matches the regex, the specified action will be performed, either renaming or closing the image. Within each regular expression, there are also "groupings", notated with parentheses. These captured groups are accessible when writing name patterns, allowing you to manipulate sections of, or the entirety of the existing identifier.  
 {:style="margin-left:0.5rem; margin-bottom:1.5rem;"}
 
-Whether you have lots of experience with regular expressions, or none at all, [Regex101](https://regex101.com/) is an excellent tool for drafting and testing your regex code. It has syntax highlighting, explanations of all tokens, and makes drafting regex very easy.
+Whether you have lots of experience with regular expressions, or none at all, [Regex101](https://regex101.com/){:.faded} is an excellent tool for drafting and testing your regex code. It has syntax highlighting, explanations of all tokens, and makes drafting regex very easy.
+{:.faded style="margin-left:0.5rem; margin-bottom:2.5rem;"}
+
+**Script Specifics:**
+{:style="margin-left:0.5rem"}
+Group zero is reserved for the entire matching pattern (which may or may not be the entire original ID). All subsequent groups are sorted by the order they appear in the Regex pattern. There is currently one supported regex flag, being `i`, or the case insensitive flag.
 {:style="margin-left:0.5rem; margin-bottom:2.5rem;"}
 
 **Example:**
@@ -54,11 +57,11 @@ With the following regex and the view named `masterLight_BIN_1_EXPOSURE_300_00s_
 masterLight.*EXPOSURE_([0-9]*).*FILTER_([a-zA-Z0-9]*)
 ~~~
 {:style="margin-left:1.5rem"}
-**Index 0** = "masterLight_BIN_1_EXPOSURE_300_00s_FILTER_Red"
+**Group 0** = "masterLight_BIN_1_EXPOSURE_300_00s_FILTER_Red"
 {:style="margin-left:1.5rem"}
-**Index 1** = "300"
+**Group 1** = "300"
 {:style="margin-left:1.5rem"}
-**Index 2** = "Red"
+**Group 2** = "Red"
 {:style="margin-left:1.5rem"}
 
 <hr>
@@ -76,7 +79,7 @@ Any free text can be used, however it will automatically be converted to conform
 
 **Regex Group** 
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-Regex groups can be accessed with the use of curly braces enclosing an index value (eg. `{0}`, `{1}`...) The value of the selected group will substitute the token.
+Regex groups can be accessed with the use of curly braces enclosing an index value (eg. `{0}`, `{1}`...) The value of the selected group will substitute the token. The index values are the same as the group numbers as discussed in the [Regular Expressions](#regular-expressions) section.
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 **FITS Header**
@@ -86,7 +89,7 @@ FITS header values can be inserted by wrapping the header name with dollar signs
 
 **Format Flags**
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-Regex group and FITS header substitutes both accept three formatting flags, `-u`, `-l`, or `-p` for uppercase, lowercase, and proper case respectively. These are added to the end of the enclosed value. (eg. `$FILTER-p$`, `{1-u}`)
+Regex group and FITS header substitutes both accept three formatting flags, `-u`, `-l`, or `-p` for UPPERCASE, lowercase, and Proper Case respectively. These are added to the end of the enclosed value. (eg. `$FILTER-p$`, `{1-u}`)
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 <hr>
