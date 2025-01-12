@@ -24,9 +24,14 @@ Narrowband and Broadband are often thought of as completely independent fields o
 <!-- Insert image -->
 
 <div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 1854/1264; margin-bottom: 30px; width:100%;">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/NoAddition.jpg" alt="Image 1">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/HaCloudAddition.jpg" alt="Image 2" style="opacity:0;">
+    <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/NoAddition.jpg" alt="Before Narrowband Addition">
+    <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/HaCloudAddition.jpg" alt="After Narrowband Addition" style="opacity:0;">
+    <span class="center button right icon-arrow-right2"></span>
+    <span class="center button left icon-arrow-left2"></span>
 </div>
+
+Before and After narrowband addition
+{:.figcaption}
 
 
 ## Continuum Subtraction
@@ -64,9 +69,15 @@ $T[0] - ($T[1] - med( $T[1]))
 ```
 
 <div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 1854/1264; margin-bottom: 30px; width:100%;">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/RGB.jpg" alt="Image 1">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/RGB_BN_CC.jpg" alt="Image 2" style="opacity:0;">
+    <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/RGB.jpg" alt="Without Color Calibration">
+    <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/RGB_BN_CC.jpg" alt="With Color Calibration" style="opacity:0;">
+    <span class="center button right icon-arrow-right2"></span>
+    <span class="center button left icon-arrow-left2"></span>
 </div>
+
+Before and After Color Calibration
+{:.figcaption}
+
 
 <hr>
 
@@ -93,6 +104,9 @@ f = [ input value of f here ]
 ```
 
 <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/f0.14.jpg">
+
+Example of properly continuum subtracted narrowband image
+{:.figcaption}
 
 
 <hr>
@@ -126,14 +140,20 @@ B = 0.05,
 m = 0.999,
 ```
 
-
-
 <hr>
 
 <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/ha_addition_old/HaAddition.jpg">
 
+Fully processed result with bright structure addition
+{:.figcaption}
 
-<!-- Mouseover Swap -->
+<hr>
+
+Please feel free to contact me with any questions!
+{:style="font-weight:bold; font-size:1.25rem; margin-bottom:0.5rem"}
+See my [Contact](/contact) page for info on how to contact me!
+{:style="margin-left:1rem;"}
+
 <style>
 .mouseover-swap {
   position: relative;
@@ -148,26 +168,59 @@ m = 0.999,
   height: 100%;
   transition: .25s ease-in-out;
 }
+
+.mouseover-swap .center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); 
+}
+
+.mouseover-swap .right {
+  margin-right: 5px;
+  right: 0;
+}
+
+.mouseover-swap .left {
+  margin-left: 5px;
+  left: 0;
+}
+
+.mouseover-swap .button {
+  font-size: 1.5em;
+  border-radius: 5px;
+  background-color: rgba(30,30,30,0.6);
+  padding: 8px;
+  cursor: pointer;
+}
 </style>
 
 <script>
-document.getElementById('_pushState').addEventListener('hy-push-state-after', function() {
-    initMouseover();
-});
 initMouseover();
 
 function initMouseover() {
-    const mouseovers = document.querySelectorAll(".mouseover-swap");
-    mouseovers.forEach(pair => {
-        const img2 = pair.querySelector("img:last-child");
-        
-        pair.addEventListener("mouseover", function() {
-            img2.style.opacity = 1;
-        });
-        
-        pair.addEventListener("mouseout", function() {
-            img2.style.opacity = 0;
-        });
+  const mouseovers = document.querySelectorAll(".mouseover-swap");
+  mouseovers.forEach(pair => {
+    const img2 = pair.querySelectorAll("img")[1];
+    const buttons = pair.querySelectorAll(".button");
+    buttons.forEach(button => {
+      button.addEventListener("click", function() {
+        if (img2.style.opacity == 0) {
+          img2.style.opacity = 1;
+        } else {
+          img2.style.opacity = 0;
+        }
+      });
+    })
+
+    /*pair.addEventListener("mouseover", function() {
+        img2.style.opacity = 1;
     });
+    
+    pair.addEventListener("mouseout", function() {
+        img2.style.opacity = 0;
+    });*/
+  });
 }
 </script>

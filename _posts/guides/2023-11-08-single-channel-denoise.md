@@ -20,18 +20,17 @@ excerpt_separator: <!--more-->
 {:toc}
 
 ## Background 
+
 [DeepSNR](https://www.deepsnrastro.com/), created by Mikita Misiura, the creator of StarNet, is one of the most powerful neural network tools that we Astrophotographers have access to. It has revolutionized the way we denoise our data, providing exceptionally clean results, far exceeding any other tool. The only caveat, however, is that in order for DeepSNR to effectively remove noise from an image, the source image must be a 3-channel combined RGB image inside of Pixinsight. This is no problem at all for broadband applications but is a limitation for single or dual channel data. This article will go over two powerful, yet simple techniques for working around the three-channel limitation without the need to collect additional data. 
 
-<!-- TODO: Replace the images -->
-
-<div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 708/400; margin-bottom: 20px; margin-top: 40px; width:90%;">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/wr134/pn_candidate_hoo1.jpg" alt="Image 1">
-  <img src="https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/wr134/pn_candidate_rgb.jpg" alt="Image 2" style="opacity:0;">
+<div class="mouseover-swap" style="display:block; margin-left:auto; margin-right:auto; aspect-ratio: 2000/1240; margin-bottom: 20px; margin-top: 2rem; width:75%;">
+  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/deepsnr/no_denoise.jpg" alt="Not Denoised">
+  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/deepsnr/denoise.jpg" alt="Denoised" style="opacity:0;">
   <span class="center button right icon-arrow-right2"></span>
   <span class="center button left icon-arrow-left2"></span>
 </div>
 
-Before and After single channel DeepSNR
+Before and after single channel DeepSNR
 {:.figcaption}
 
 <hr>
@@ -39,8 +38,16 @@ Before and After single channel DeepSNR
 ## The Problem
 While it may be tempting to perform certain processes to fake having a color image for DeepSNR to run, there are caveats and downsides to most of the trivial approaches one might think of.
 
+
 #### Why Can’t I Convert the Image to Color?
 {:style="margin-left:1rem;"}
+
+<div class="rightside">
+  <img src="https://nightphotons.s3.amazonaws.com/assets/img/guides/deepsnr/pockmarks.jpg" alt="Image with deepSNR artifacts">
+  <p class="figcaption" style="margin-top: 0.25rem;">Performing DeepSNR on an HOO image hallucinates stars, creating distinct pockmark-like artifacts</p>
+
+</div>
+
 As a result of DeepSNR being trained on color images only, it requires three channels that all contain distinct noise patterns. The technical term for this is 'non-correlated' noise, meaning no channel's noise pattern depends on any of the others. It is able to use the difference in these noise patterns to get a “best guess” as to what the underlying signal might have been.  When you convert a grayscale image to RGB, you only have one set of noise across all three channels, meaning it is strongly correlated, which will result in hallucinations. 
 {:style="margin-left:1.5rem;"}
 
@@ -143,6 +150,33 @@ See my [Contact](/contact) page for info on how to contact me!
 
 <!-- Mouseover Swap -->
 <style>
+.rightside {
+  width: 40%;
+  float: right;
+  margin-left: 1rem;
+}
+
+.rightside img {
+  border-radius: 5px;
+  width:100%;
+  display:block; 
+  margin-left:auto; 
+  margin-right:0
+}
+
+@media (max-width: 768px) {
+  .rightside {
+    width: 100%;
+    float: none;
+    display: inline-block; 
+  }
+  .rightside img {
+    width: 85%;
+    margin-left:auto; 
+    margin-right:auto;
+  }
+}
+
 .mouseover-swap {
   position: relative;
   display: inline-block;
