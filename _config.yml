@@ -24,13 +24,13 @@ title:                 NightPhotons
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Night Photons · Astrophotography Gallery · Pixinsight Processing Guides and Tutorials · Equipment
+  Night Photons · Astrophotography Gallery · PixInsight Processing Guides and Tutorials · Equipment
 
 # A shorter description for the sidebar.
 tagline:               --- Charles Hagen ---
 
 # A list of keywords for your blog
-keywords:              ["Pixinsight", "Pix tutorials", "Pixinsight tutorials", "Continuum subtraction", "Narrowband addition", "Narrowband"]
+keywords:              ["PixInsight", "Pix tutorials", "PixInsight tutorials", "Continuum subtraction", "Narrowband addition", "Narrowband"]
 
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
@@ -97,7 +97,7 @@ theme: jekyll-theme-hydejack
 # ----------------------------------------------------------------------------------------
  
 # Sidebar image and theme color of the site.
-accent_image:          /assets/img/sidebar-bg.jpg
+accent_image:          https://nightphotons.s3.amazonaws.com/assets/website/sidebar-bg.jpg
 accent_color:          rgb(14, 120, 227)
 
 # This is used for the `theme-color` meta tag,
@@ -412,21 +412,21 @@ jekyll_compose:
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /assets/img/sidebar-bg.jpg
+        path: https://nightphotons.s3.amazonaws.com/assets/website/sidebar-bg.jpg
     posts:
       layout: post
       description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /assets/img/sidebar-bg.jpg
+        path: https://nightphotons.s3.amazonaws.com/assets/website/sidebar-bg.jpg
     projects:
       layout: project
       description: > 
         A short ~160 character description of your post for search engines,
         social media previews, etc.
       image:
-        path: /assets/img/sidebar-bg.jpg
+        path: https://nightphotons.s3.amazonaws.com/assets/website/sidebar-bg.jpg
       links:
         - title: Project Link
           url: https://example.com

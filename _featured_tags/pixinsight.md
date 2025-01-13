@@ -1,7 +1,7 @@
 ---
 layout: grid
 type: tag
-title: Pixinsight Scripts
+title: PixInsight Scripts
 slug: pixinsight
 no_groups: true
 sitemap: false

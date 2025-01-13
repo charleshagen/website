@@ -25,7 +25,7 @@ sitemap: false
     <p class="figcaption" style="margin-top: 0.25rem;">Process icons Example</p>
 </div>
 
-Pixinsight is a notoriously unintuitive piece of software and unfortunately, process icons, a critical component of my processing flow are criminally underused. While on the surface, they do not appear to provide much utility, they will add an element of efficiency to your processing workflow that you can not even imagine. These simple icons allow you quick, organized access to your most frequently used processes and scripts and allow you to use multiple instances of customized processes across multiple sessions with saved and constant settings. In this short article, I will show you the basics of creating and using these process icon sets to improve your Pixinsight experience!
+PixInsight is a notoriously unintuitive piece of software and unfortunately, process icons, a critical component of my processing flow are criminally underused. While on the surface, they do not appear to provide much utility, they will add an element of efficiency to your processing workflow that you can not even imagine. These simple icons allow you quick, organized access to your most frequently used processes and scripts and allow you to use multiple instances of customized processes across multiple sessions with saved and constant settings. In this short article, I will show you the basics of creating and using these process icon sets to improve your PixInsight experience!
 
 <hr>
 
@@ -35,7 +35,7 @@ While creating a process icon set is a process that is very unique to each indiv
 - Create your process icon set in descending order. If you’re anything like me, organization is everything, and this remains true with my process icons. I keep the icons I use first at the very top of my process icon set, organized laterally by process type, for example, DBE and ABE are in a pair because they both deal with background removal and they are on the same row near the top because they are done early on in the process. 
 - Block out sections. In my example to the right, I have 5 primary blocks, the top-right block being my primary process flow, the top-left being my identifier icons, the mid-left being my Relinearization workflow, the bottom-left being my Manual DBE section, and the bottom-right being my color combinations section. While these blocks work for me, however, they may not work for you! Experiment and find a layout that is comfortable and efficient for you.
 - Save your settings. While it can be easy to overlook and may sound trivial, saving your common settings can be a massive time-saver when you are processing. Before you save an icon, take the time now to enter your most common settings. For example, with Photometric Color Calibration, enter your focal length, pixel size, and approximate date to avoid having to re-enter those same values every time.
-- Hoard icons! While my example may be a bit extreme, feel free to continue adding and iterating your process icon set as your skills and preferred methods in Pixinsight change! Icons take up little space on your desktop and you can always cut them down later if you need. 
+- Hoard icons! While my example may be a bit extreme, feel free to continue adding and iterating your process icon set as your skills and preferred methods in PixInsight change! Icons take up little space on your desktop and you can always cut them down later if you need. 
 
 <hr>
 
@@ -43,8 +43,8 @@ While creating a process icon set is a process that is very unique to each indiv
 After you have an idea of the flow of your process icon set, creating the set is very simple!
 
 - If a process or script is able to be loaded as a process icon, there will be a blue triangle in the bottom left corner. (Keep in mind that some scripts can be applied directly to images however some will need to be opened which you can do by double-clicking the icon) 
-- Simply drag the blue triangle onto the “Desktop” in Pixinsight, this will create the icon. Then feel free to move the icon around into your desired position. 
-- Once you’ve organized the icons to your liking, it’s time to save. Click and drag over all of the icons, right-click, and select “Save Selected Icons…”, this will prompt you to select a directory where your .xpsm file will be saved, make sure this is a location that is easily accessible! I recommend saving this to your desktop and using it to launch Pixinsight.
+- Simply drag the blue triangle onto the “Desktop” in PixInsight, this will create the icon. Then feel free to move the icon around into your desired position. 
+- Once you’ve organized the icons to your liking, it’s time to save. Click and drag over all of the icons, right-click, and select “Save Selected Icons…”, this will prompt you to select a directory where your .xpsm file will be saved, make sure this is a location that is easily accessible! I recommend saving this to your desktop and using it to launch PixInsight.
 
 <hr>
 
@@ -55,8 +55,8 @@ After you have an idea of the flow of your process icon set, creating the set is
 </div>
 
 Loading one or multiple process icons is also very simple!
-- To load a single process icon set, simply right-click on the Pixinsight “Desktop” and select Process Icons > Load Process Icons, then locate your xpsm file.
-- To load multiple process icons, right-click on the Pixinsight “Desktop” and select Process Icons > Merge Process Icons, then locate your xpsm files. This will merge multiple process icon sets together in the same workspace whereas “Load Process Icons” will replace the existing set. 
+- To load a single process icon set, simply right-click on the PixInsight “Desktop” and select Process Icons > Load Process Icons, then locate your xpsm file.
+- To load multiple process icons, right-click on the PixInsight “Desktop” and select Process Icons > Merge Process Icons, then locate your xpsm files. This will merge multiple process icon sets together in the same workspace whereas “Load Process Icons” will replace the existing set. 
 
 <hr>
 

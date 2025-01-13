@@ -53,7 +53,7 @@ Multiscale gradient removal is very simple. In principle, by using a small secti
 
 Performing MSGR is a relatively simple task,
 
-- First and foremost, load both the narrow-field and wide-field datasets into Pixinsight. MSGR can be done on monochrome or color images.
+- First and foremost, load both the narrow-field and wide-field datasets into PixInsight. MSGR can be done on monochrome or color images.
 - If the wide-field dataset contains any prominent gradients, remove them with Dynamic / Automatic Background Extraction. I recommend keeping the correction simple, low function degree, high smoothing, and/or few points far apart.  
 - Create a duplicate of the narrow-field image and name it `Narrow`. Keep the original narrow-field image as it will be needed later for correction.
 - On the wide-field image, create a preview that is slightly wider than the field of view of the `Narrow` image. Apply the `StarAlign_Narrow` Icon or use the StarAlign process. The included process icon set (download above) contains all of the settings for each process.

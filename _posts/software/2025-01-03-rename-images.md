@@ -24,7 +24,7 @@ excerpt_separator: <!--more-->
     <img src="https://nightphotons.s3.amazonaws.com/assets/img/software/rename_images/screenshot.png" alt="Graphical interface"/>
 </div>
 
-The RenameImages script provides a fast way to quickly rename and close automated outputs from most any integration routine to your preference. This speeds up the very beginning of your processing routine, especially for mosaics where you may have many files that will all need to be named differently. It uses regular expressions to target and either rename or close all views that are open in the current pixinsight instance.
+The RenameImages script provides a fast way to quickly rename and close automated outputs from most any integration routine to your preference. This speeds up the very beginning of your processing routine, especially for mosaics where you may have many files that will all need to be named differently. It uses regular expressions to target and either rename or close all views that are open in the current PixInsight instance.
 
 <hr>
 
@@ -38,7 +38,7 @@ It is recommended that you use this script at the beginning of your process to m
 <!-- REGULAR EXPRESSIONS -->
 ### Regular Expressions
 {:style="margin-top:2.5rem;"}
-Regular expressions, or "regex", allow for finding, extracting, and manipulating text data. When the script is executed, the identifier of every image open in Pixinsight is compared against the user-defined regular expression. If it matches the regex, the specified action will be performed, either renaming or closing the image. Within each regular expression, there are also "groupings", notated with parentheses. These captured groups are accessible when writing name patterns, allowing you to manipulate sections of, or the entirety of the existing identifier.  
+Regular expressions, or "regex", allow for finding, extracting, and manipulating text data. When the script is executed, the identifier of every image open in PixInsight is compared against the user-defined regular expression. If it matches the regex, the specified action will be performed, either renaming or closing the image. Within each regular expression, there are also "groupings", notated with parentheses. These captured groups are accessible when writing name patterns, allowing you to manipulate sections of, or the entirety of the existing identifier.  
 {:style="margin-left:0.5rem; margin-bottom:1.5rem;"}
 
 Whether you have lots of experience with regular expressions, or none at all, [Regex101](https://regex101.com/){:.faded} is an excellent tool for drafting and testing your regex code. It has syntax highlighting, explanations of all tokens, and makes drafting regex very easy.
@@ -69,12 +69,12 @@ masterLight.*EXPOSURE_([0-9]*).*FILTER_([a-zA-Z0-9]*)
 <!-- PATTERNING -->
 ### Patterning
 {:style="margin-top:2.5rem;"}
-RenameImages implements patterning with support for free text, regex group content, and FITS header values. Substituted values also accept formatting flags. All generated IDs are guaranteed to be unique and valid automatically. It is important to remember that image identifiers in Pixinsight can only contain alphanumerics and underscores and must not start with a number. 
+RenameImages implements patterning with support for free text, regex group content, and FITS header values. Substituted values also accept formatting flags. All generated IDs are guaranteed to be unique and valid automatically. It is important to remember that image identifiers in PixInsight can only contain alphanumerics and underscores and must not start with a number. 
 {:style="margin-left:0.5rem; margin-bottom:1.5rem;"}
 
 **Free Text**
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-Any free text can be used, however it will automatically be converted to conform to Pixinsight's naming requirements.
+Any free text can be used, however it will automatically be converted to conform to PixInsight's naming requirements.
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 **Regex Group** 
@@ -175,14 +175,14 @@ $OBJECT-p$_narrow // Pattern
 <hr>
 
 ## Installation
-The RenameImages script is bundled with several other scripts in the NightPhotons Pixinsight repository. To install, navigate to `Resources > Updates > Manage Repositories`, then click the `Add` button and paste the repository link found below. Then, `Resources > Updates > Check for Updates` and restart Pixinsight. The scripts should now appear under `Scripts > NightPhotons`.
+The RenameImages script is bundled with several other scripts in the NightPhotons PixInsight repository. To install, navigate to `Resources > Updates > Manage Repositories`, then click the `Add` button and paste the repository link found below. Then, `Resources > Updates > Check for Updates` and restart PixInsight. The scripts should now appear under `Scripts > NightPhotons`.
 <!-- TODO: Link out to the pixinsight scripts tag -->
 #### Repository
 ~~~
 https://raw.githubusercontent.com/charleshagen/pixinsight/main/updates/
 ~~~
 {:style="margin-left:1.5rem; margin-right:1rem;"}
-NightPhotons Pixinsight Repository --- (Do not open this link in your browser, there is no web content there)
+NightPhotons PixInsight Repository --- (Do not open this link in your browser, there is no web content there)
 {:.figcaption}
 
 #### Troubleshooting

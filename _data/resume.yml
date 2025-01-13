@@ -114,7 +114,7 @@ skills:
       - "InfluxDB"  
   - name: "Image Processing"
     keywords:
-      - "Pixinsight"
+      - "PixInsight"
       - "Python"
       - "OpenCV"
 projects:

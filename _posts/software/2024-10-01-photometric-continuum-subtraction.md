@@ -20,14 +20,14 @@ sitemap: true
 PhotometricContinuumSubtraction, or PCS for short, is a fully automated routine for continuum subtraction. You provide linear narrowband and broadband data, and using a photometric routine, it will automatically calculate and apply the mathematically optimal weights. This provides a robust and fast method of estimating and subtracting continuum signal from your narrowband data.  
 
 ## Installation
-The PhotometricContinuumSubtraction script is bundled with several other scripts in the NightPhotons Pixinsight repository. To install, navigate to `Resources > Updates > Manage Repositories`, then click the `Add` button and paste the repository link found below. Then, `Resources > Updates > Check for Updates` and restart Pixinsight. The scripts should now appear under `Scripts > NightPhotons`.
+The PhotometricContinuumSubtraction script is bundled with several other scripts in the NightPhotons PixInsight repository. To install, navigate to `Resources > Updates > Manage Repositories`, then click the `Add` button and paste the repository link found below. Then, `Resources > Updates > Check for Updates` and restart PixInsight. The scripts should now appear under `Scripts > NightPhotons`.
 <!-- TODO: Link out to the pixinsight scripts tag -->
 #### Repository
 ~~~
 https://raw.githubusercontent.com/charleshagen/pixinsight/main/updates/
 ~~~
 {:style="margin-left:1rem; margin-right:1rem;"}
-NightPhotons Pixinsight Repository --- (Do not open this link in your browser, there is no web content there)
+NightPhotons PixInsight Repository --- (Do not open this link in your browser, there is no web content there)
 {:.figcaption}
 
 #### Troubleshooting
