@@ -6,7 +6,7 @@ title: Continuum Subtraction
 description: >
     New and improved advanced narrowband processing guide
 hide_description: true
-sitemap: false
+sitemap: true
 ---
 0. _
 {:toc}

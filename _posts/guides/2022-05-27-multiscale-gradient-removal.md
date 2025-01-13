@@ -12,7 +12,7 @@ image:
         2400w: https://nightphotons.s3.amazonaws.com/assets/img/guides/gradient_removal/thumbnail_x1,0.jpg
         1200w: https://nightphotons.s3.amazonaws.com/assets/img/guides/gradient_removal/thumbnail_x0,5.jpg
         600w:  https://nightphotons.s3.amazonaws.com/assets/img/guides/gradient_removal/thumbnail_x0,25.jpg
-sitemap: false
+sitemap: true
 ---
 
 0. _

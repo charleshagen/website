@@ -250,7 +250,7 @@ hydejack:
   # The net effect is to use the Jekyll-provided `site.related_posts` variable.
   use_lsi:             true
 
-  # When using Google Analytics, set to `true` to display a cookie notice banner.
+  # When using ytics, set to `true` to display a cookie notice banner.
   # When enabled, no user-related data will be stored until the user gives consent.
   cookies_banner:      true
 
@@ -346,6 +346,8 @@ plugins:
 
 # SEO Tag
 # ---------------------------------------------------------------------------------------
+
+google_analytics: G-FCDK6NKVGJ
 
 # Where you proof that you own this site (used by jekyll-seo-tag)
 # google_site_verification: <verification-id>

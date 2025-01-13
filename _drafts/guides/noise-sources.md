@@ -13,7 +13,7 @@ image:
     1920w: https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/NoiseArticle.jpg
     960w: https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/NoiseArticle_x0,5.jpg
     480w:  https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/NoiseArticle_x0,25.jpg
-sitemap: false
+sitemap: true
 hide_last_modified: true
 excerpt_separator: <!--more-->
 ---
