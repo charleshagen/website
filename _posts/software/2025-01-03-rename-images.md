@@ -35,10 +35,32 @@ RenameImages provides two main functions; renaming and closing images according 
 It is recommended that you use this script at the beginning of your process to minimize the risk of accidental closure or loss of future history.
 {:.note}
 
+### Working Modes
+{:style="margin-top:2.5rem;"}
+Select the string to be used in the regular expression matching for each image, this will become your 'reference string'. For closing images, only the image identifier will be used as the reference string.
+
+In Pixinsight version 1.9.3 automatically generated master files from WBPP and FBPP no longer use the filename as the identifier, instead those images are identified as `integration`. Use one of the file modes to retain access to information that was previously in the identifier.
+{:.note}
+
+**Identifier**
+{:style="margin-left:0.5rem; margin-bottom:0rem;"}
+Use the Pixinsight image identifier as the reference string for the regular expression matching. 
+{:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
+
+**Filepath**
+{:style="margin-left:0.5rem; margin-bottom:0rem;"}
+Use the entire filepath as the reference string for the regular expression matching. If no filepath is available, it will be skipped. 
+{:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
+
+**Filename**
+{:style="margin-left:0.5rem; margin-bottom:0rem;"}
+Use the filename, excluding the extension, as the reference string for the regular expression matching. If no filename is available, it will be skipped. 
+{:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
+
 <!-- REGULAR EXPRESSIONS -->
 ### Regular Expressions
 {:style="margin-top:2.5rem;"}
-Regular expressions, or "regex", allow for finding, extracting, and manipulating text data. When the script is executed, the identifier of every image open in PixInsight is compared against the user-defined regular expression. If it matches the regex, the specified action will be performed, either renaming or closing the image. Within each regular expression, there are also "groupings", notated with parentheses. These captured groups are accessible when writing name patterns, allowing you to manipulate sections of, or the entirety of the existing identifier.  
+Regular expressions, or "regex", allow for finding, extracting, and manipulating text data. When the script is executed, the reference string (determined by working mode) of every image open in PixInsight is compared against the user-defined regular expression. If it matches the regex, the specified action will be performed, either renaming or closing the image. Within each regular expression, there are also "groupings", notated with parentheses. These captured groups are accessible when writing name patterns, allowing you to manipulate sections of, or the entirety of the existing reference string.  
 {:style="margin-left:0.5rem; margin-bottom:1.5rem;"}
 
 Whether you have lots of experience with regular expressions, or none at all, [Regex101](https://regex101.com/){:.faded} is an excellent tool for drafting and testing your regex code. It has syntax highlighting, explanations of all tokens, and makes drafting regex very easy.
