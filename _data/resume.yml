@@ -160,7 +160,7 @@ interests:
       - "Equipment"
       - "Physiology"
       - "Science"
-references:
-  - name: "Patrick Loner, CEO Altius"
-    reference: >
-      TODO
+# references:
+#   - name: "Patrick Loner, CEO Altius"
+    # reference: >
+    #   TODO

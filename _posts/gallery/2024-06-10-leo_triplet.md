@@ -6,8 +6,8 @@ tags:        galaxy
 title:       The Leo Triplet
 date:        19 Sep 2024
 caption:     The Leo Triplet \| HaRGB \| 150 hours
-description: >
-  M65, M66, and NGC 3628 - The Leo Triplet, imaged in Ha + RGB under Bortle 1 skies at SDSO. 
+# description: >
+#   M65, M66, and NGC 3628 - The Leo Triplet, imaged in Ha + RGB under Bortle 1 skies at SDSO. 
 image: 
   path: https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/leo_triplet/image_x1,0.jpg
   srcset: 
@@ -26,9 +26,6 @@ accent_image:
 excerpt_separator: <!--more-->
 ---
 <!--more-->
-
-M65, M66, and NGC 3628 - The Leo Triplet, imaged in Ha + RGB under Bortle 1 skies at SDSO.
-{:.figcaption}
 
 ### Acquisition
 
