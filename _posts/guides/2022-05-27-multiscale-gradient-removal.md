@@ -2,7 +2,7 @@
 layout: post
 categories: guides
 tags: advanced
-title: Mulitscale Gradient Removal
+title: Multiscale Gradient Removal
 description: > 
     The most effective background extraction method which is surprisingly simple.
 # hide_description: true
