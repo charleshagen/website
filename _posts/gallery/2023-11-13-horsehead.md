@@ -27,6 +27,16 @@ excerpt_separator: <!--more-->
 ---
 <!--more-->
 
+<!-- Full resolution button -->
+<a 
+  class="btn btn-sm"
+  href="https://nightphotons.s3.amazonaws.com/assets/img/gallery/deep_sky/horsehead/full_resolution.jpg"
+  target="_blank"
+  style="float: right; background-color: rgba(128, 128, 128, 0.2); border: none; margin-top: -20px;">
+  <span class="icon-enlarge2" style="margin-right: 0.5em; opacity:0.7;"></span>Full Resolution
+</a>
+
+
 ### Acquisition
 
 | Filter     | Exposures    | Integration |
