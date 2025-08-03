@@ -82,7 +82,7 @@ Noise is generated in countless ways 'underneath the hood' in modern cameras, ho
 
 #### Poisson Distribution
 
-The Poisson distribution describes the probability of independent, constant-rate events occurring, such as photon detection or dark current charge buildup. As the mean rate increases, so too does the variance.
+The Poisson distribution describes the probability of independent, constant-rate events occurring, such as photon detection or dark current buildup. As the mean rate increases, so too does the variance. A special property of the poisson distribution is that its RMS is equal to it's standard deviation. 
 
 ![Poisson Distribution](https://nightphotons.s3.amazonaws.com/assets/img/guides/noise/noise_PoissonDistribution.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="85%"}
 
@@ -115,7 +115,7 @@ To complete the CCD equation for a single exposure, only the numerator now needs
 
 $$
 \begin{equation}
-    \text{SNR}=\frac{S_T}{\sqrt{R^2 + D_{C}t + S_{T}t + S_{B}t}}
+    \text{SNR}=\frac{S_Tt}{\sqrt{R^2 + D_{C}t + S_{T}t + S_{B}t}}
 \end{equation}
 $$
 
