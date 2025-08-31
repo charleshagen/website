@@ -5,6 +5,9 @@ title: False Color
 slug: false-color
 sitemap: false
 no_groups: true
+
+accent_image:          /assets/img/false-color-sidebar-bg.jpg
+
 ---
 
 <span class="icon-price-tag" style="margin-right: 0.5em;"></span>
