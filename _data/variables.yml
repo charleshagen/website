@@ -11,9 +11,9 @@
   font_weight_bold: 700 #=bold
   font_weight_heading: 900 #=black (heavy)
 
-  content_width: 52 #rem
-  content_width_2: 58 #rem
-  content_width_5: 64 #rem
+  content_width: 56 #rem
+  content_width_2: 62 #rem
+  content_width_5: 68 #rem
 
   sidebar_width: 21 #rem
   border_radius: 0.5 #rem
