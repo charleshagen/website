@@ -4,6 +4,7 @@ type: tag
 title: False Color
 slug: false-color
 sitemap: false
+no_groups: true
 ---
 
 <span class="icon-price-tag" style="margin-right: 0.5em;"></span>
