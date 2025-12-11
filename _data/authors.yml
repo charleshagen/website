@@ -60,7 +60,7 @@ author1:
     # blogger:         <number>
     # delicious:       <username>
     # stumbleupon:     <username>
-    # paypal:          <username>
+    paypal:          https://www.paypal.com/donate/?business=5WHEM7EG8AWYS&no_recurring=0&currency_code=USD
     # download:        <url>
     # keybase:         <username>
     # signal:          <group-invite-code>

@@ -204,7 +204,7 @@ yelp:
   icon: icon-yelp
   prepend: "https://www.yelp.com/user_details?userid="
 paypal:
-  name: PayPal
+  name: Support Me
   icon: icon-paypal
   prepend: "https://www.paypal.me/"
 keybase:
