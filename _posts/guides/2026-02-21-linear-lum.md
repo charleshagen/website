@@ -4,7 +4,7 @@ categories: guides
 tags: basic
 title: Linear Luminance
 description: >
-    A simple, more reliable  alternative to the standard LRGB combination method which yields better results. 
+    An alternative method to traditional LRGB combination that yields better results while being simpler and more reliable.
 hide_description: true
 image:
     path: https://nightphotons.s3.amazonaws.com/assets/img/guides/linear_lum/thumbnail_x1,0.jpg
@@ -14,7 +14,7 @@ image:
         600w:  https://nightphotons.s3.amazonaws.com/assets/img/guides/linear_lum/thumbnail_x0,25.jpg
 sitemap: true
 ---
-0. _
+1. _
 {:toc}
 
 ## Background

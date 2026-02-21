@@ -19,11 +19,11 @@ excerpt_separator: <!--more-->
 - _
 {:toc}
 
-## Introduction
 <div class="rightside">
     <img src="https://nightphotons.s3.amazonaws.com/assets/img/software/rename_images/screenshot.png" alt="Graphical interface"/>
 </div>
 
+## Introduction
 The RenameImages script provides a fast way to quickly rename and close automated outputs from most any integration routine to your preference. This speeds up the very beginning of your processing routine, especially for mosaics where you may have many files that will all need to be named differently. It uses regular expressions to target and either rename or close all views that are open in the current PixInsight instance.
 
 <hr>
@@ -220,7 +220,9 @@ See my [Contact](/contact) page for info on how to contact me!
 
 <style>
 .rightside {
-    width: 50%;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    width: 45%;
     float: right;
 }
 
