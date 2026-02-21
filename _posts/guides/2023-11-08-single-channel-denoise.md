@@ -19,6 +19,16 @@ excerpt_separator: <!--more-->
 - _
 {:toc}
 
+<div style="border: 1px solid #ffbf00; border-left: 8px solid #ffbf00; padding: 4px; margin: 10px 0; border-radius: 4px; font-family: system-ui, -apple-system, sans-serif;">
+  <p style="margin: 0; font-weight: bold; display: flex; align-items: center;">
+    <span style="font-size: 1.25rem; margin-right: 10px;">⚠️</span> 
+    Deprecated Technique
+  </p>
+  <p style="margin: 0px 0 10px 40px; font-size: 0.95rem; line-height: 1.5;">
+    With the release of DeepSNR v2, this technique is no longer necessary: DeepSNR now natively supports monochrome inputs without any additional preparation. 
+  </p>
+</div>
+
 ## Background 
 
 [DeepSNR](https://www.deepsnrastro.com/), created by Mikita Misiura, the creator of StarNet, is one of the most powerful neural network tools that we Astrophotographers have access to. It has revolutionized the way we denoise our data, providing exceptionally clean results, far exceeding any other tool. The only caveat, however, is that in order for DeepSNR to effectively remove noise from an image, the source image must be a 3-channel combined RGB image inside of PixInsight. This is no problem at all for broadband applications but is a limitation for single or dual channel data. This article will go over two powerful, yet simple techniques for working around the three-channel limitation without the need to collect additional data. 
