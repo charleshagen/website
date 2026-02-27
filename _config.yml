@@ -49,14 +49,16 @@ author:
 menu:
   - title:             Gallery
     url:               /gallery/
-  - title:             Blog
-    url:               /blog/
+  # - title:             Blog
+  #   url:               /blog/
   # - title:             Résumé*
   #   url:               /resume/
   - title:             Guides
     url:               /guides/
   - title:             Software
     url:               /software/
+  - title:             Gear
+    url:               /gear/
   - title:             Contact
     url:               /contact/
   
