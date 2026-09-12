@@ -22,31 +22,32 @@ sitemap: true
 </div>
 
 ## Introduction
-PhotometricContinuumSubtraction, or PCS for short, is a fully automated routine for continuum subtraction. You provide linear narrowband and broadband data, and using a photometric routine, it will automatically calculate and apply the mathematically optimal weights. This provides a robust and fast method of estimating and subtracting continuum signal from your narrowband data.  
+PhotometricContinuumSubtraction, or PCS for short, is a fully automated routine for continuum subtraction. You provide linear narrowband and broadband data, and using a photometric routine, it will automatically calculate and apply the mathematically optimal weights. This provides a robust and fast method of estimating and subtracting continuum signal from your narrowband data. As of version `1.4.0`, PCS now can use multiple broadband reference images to produce a refined composite reference, yielding better results than can be achieved with a single reference.
 <hr>
 
 ## Documentation
 The PhotometricContinuumSubtraction script can be configured to run either with or without the dialog. If you use the [Rename Images Script](https://www.nightphotons.com/software/rename-images/) or if you use a consistent naming scheme for each filter's image, the script can be saved off into a process icon and dragged onto any active image to run the script. If you prefer to configure the script each time, you can launch the script dialog under `Scripts > NightPhotons > PhotometriContinuumSubtraction`.
+<hr>
 
-**Original Views**
+**Source Views**
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-This section contains view selectors for `Narrowband` and `Broadband` images. Here, select your star-containing narrow and broad band images respectively. These inputs are mandatory.  
+**Narrowband** - Select your target narrowband image to be continuum-subtracted.
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
+**Broadband** - Select your reference broadband image(s) to be used to form the continuum composite model and click the `+` to add it to the selection. At least one broadband image is required.
+{:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
+<hr>
 
 <!-- |=====================================================================================| -->
 
 **Generate Starless**
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-**Generate Starless Checkbox** - Toggle the starless routine. When enabled, a second image will be produced using the same subtraction weights as the star-containing image.
+**Generate Starless Checkbox** - Toggle the starless routine. When enabled, a second image will be produced using the same subtraction weights as the star-containing image, but with the stars removed from both the narrowband and the continuum reference image.
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 {:style="margin-left:0.5rem; margin-bottom:0rem;"}
-**View Selectors** - Optionally provide starless images to be subtracted using the weights calculated from the photometric routine. If left blank, the starless routine will generate starless images using the selected `Fallback` method.
+**Method** - Select from StarNet V2 or StarXTerminator.
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
-
-{:style="margin-left:0.5rem; margin-bottom:0rem;"}
-**Fallback** - If no views are selected in the starless view selectors, the routine will automatically generate starless images using the provided fallback method. Select from StarNet V2 or StarXTerminator.
-{:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
+<hr>
 
 <!-- |=====================================================================================| -->
 
@@ -60,6 +61,9 @@ This section contains view selectors for `Narrowband` and `Broadband` images. He
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 **Generate Plot** - Plot narrowband flux vs. broadband flux. This can be useful for verifying the calculated fit and troubleshooting in the event of poor subtraction. If the curve is non-linear, consider increasing the maximum number of stars.
+{:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
+
+**Keep Composite** - When multiple broadband images are provided, PCS automatically calculates optimal weights to form a composite reference image to be used in subtraction. Enable this option to keep that composite image after the routine has completed.
 {:style="margin-left:1.5rem; margin-bottom:1.5rem;"}
 
 <hr>
