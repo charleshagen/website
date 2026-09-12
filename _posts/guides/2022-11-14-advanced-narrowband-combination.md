@@ -36,6 +36,16 @@ Before and After narrowband addition
 
 ## Continuum Subtraction
 
+<div style="border: 1px solid #ffbf00; border-left: 8px solid #ffbf00; padding: 4px; margin: 10px 0; border-radius: 4px; font-family: system-ui, -apple-system, sans-serif;">
+  <p style="margin: 0; font-weight: bold; display: flex; align-items: center;">
+    <span style="font-size: 1.25rem; margin-right: 10px;">⚠️</span> 
+    Deprecated Techniques
+  </p>
+  <p style="margin: 0px 0 10px 40px; font-size: 0.95rem; line-height: 1.5;">
+    With the release of <a href="https://www.nightphotons.com/software/photometric-continuum-subtraction/" target="_blank">Photometric Continuum Subtraction</a>, manual continuum subtraction is no longer necessary: The photometric routine is abe to automatically calculate optimal weights and subtract continuum data from narrowband images. This is the new preferred method. The remaining portion of the guide, from <a href="#bright-structure-addition">Bright Structure Addition</a> on is still relevant using the outputs of PCS.
+  </p>
+</div>
+
 For continuum subtraction, I will detail two possible methods, one being a more traditional method that uses a scale factor and PixelMath subtraction and another which uses a synthetic color workflow technique that outputs perfect continuum-subtracted image without any guessing and checking. While most of the narrowband integration process will be done in the later non-linear stages of the process, this stage does require linear data. In preparation, you will need your linear narrowband data and any of the nearest corresponding broadband filters which will be used for subtraction.  For example, For Hydrogen and Sulfur data, broadband red is used for the continuum subtraction, and for Oxygen data, Green. Whichever broadband channel you select, in this article, we will simply refer to it as the “Continuum” image.
 
 Local Normalization can be destructive for continuum subtraction! In this case, I recommend avoiding Local Normalization for this application.
